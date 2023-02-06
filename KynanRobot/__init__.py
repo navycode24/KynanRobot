@@ -147,9 +147,25 @@ DEV_USERS.add(951454060)
 
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
-telethn = TelegramClient("Kynan", API_ID, API_HASH)
+telethn = TelegramClient(MemorySession(), API_ID, API_HASH)
 
-pbot = Client("KynanRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+ubot2 = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
+try:
+    ubot2.start()
+except BaseException:
+    print("Userbot Error! Have you added a STRING_SESSION in deploying??")
+    sys.exit(1)
+
+pbot = Client(
+    ":memory:",
+    api_id=API_ID,
+    api_hash=API_HASH,
+    bot_token=TOKEN,
+    workers=min(32, os.cpu_count() + 4),
+)
+apps = []
+apps.append(pbot)
+loop = asyncio.get_event_loop()
 dispatcher = updater.dispatcher
 aiohttpsession = ClientSession()
 
