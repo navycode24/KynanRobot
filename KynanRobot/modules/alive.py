@@ -9,7 +9,7 @@ from KynanRobot import BOT_NAME, BOT_USERNAME, OWNER_ID, START_IMG, SUPPORT_CHAT
 
 @pbot.on_message(filters.command("alive"))
 async def awake(_, message: Message):
-    TEXT = f"**ʜɪ [{event.sender.first_name}](tg://user?id={event.sender.id}), ᴀᴋᴜ {BOT_NAME}.** \n\n"
+    TEXT = f"**ʜɪ {message.from_user.mention}, ᴀᴋᴜ {BOT_NAME}.** \n\n"
     TEXT += f"๏ **ᴍʏ ᴏᴡɴᴇʀ : [↻˹ҡʏɴλɴ˼༗](https://t.me/Riizzvbss)** \n\n"
     TEXT += f"๏ **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{telever}` \n\n"
     TEXT += f"๏ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{tlhver}` \n\n"
