@@ -88,7 +88,7 @@ PM_START_TEXT = """
 buttons = [
         [
         InlineKeyboardButton(
-            text="➕️ ᴛᴀᴍʙᴀʜᴋᴀɴ Hʏᴘᴇʀ ᴋᴇ ɢʀᴏᴜᴘ ➕️", url="t.me/Ling_Musik_Bot?startgroup=true"
+            text="➕️ ᴛᴀᴍʙᴀʜᴋᴀɴ ˹ҡʏɴλɴ ꭙ ꝛᴏʙᴏᴛ˼༗ ᴋᴇ ɢʀᴏᴜᴘ ➕️", url="t.me/KynanUserbot?startgroup=true"
         ),
     ],
     [
