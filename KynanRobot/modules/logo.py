@@ -4,7 +4,7 @@ import glob
 from PIL import Image, ImageDraw, ImageFont
 from telethon.tl.types import InputMessagesFilterPhotos
 from KynanRobot.events import register
-from KynanRobot import telethn as tbot, ubot2
+from KynanRobot import telethn
 
 
 def mediainfo(media):
@@ -62,7 +62,7 @@ async def logo_gen(event):
                 bg_ = await temp.download_media()
     else:
         pics = []
-        async for i in ubot2.iter_messages(
+        async for i in telethn.iter_messages(
             "@AllLogoKynanRobot", filter=InputMessagesFilterPhotos
         ):
             pics.append(i)
@@ -72,7 +72,7 @@ async def logo_gen(event):
         font_ = random.choice(fpath_)
     if not bg_:
         pics = []
-        async for i in ubot2.iter_messages(
+        async for i in telethn.iter_messages(
             "@AllLogoKynanRobot", filter=InputMessagesFilterPhotos
         ):
             pics.append(i)
@@ -110,7 +110,7 @@ async def logo_gen(event):
     img.save(flnme, "png")
     await xx.edit("`Uploading`")
     if os.path.exists(flnme):
-        await tbot.send_file(
+        await telethn.send_file(
             event.chat_id,
             file=flnme,
             caption="Logo by [˹ҡʏɴλɴ ꭙ ꝛᴏʙᴏᴛ˼༗](https://t.me/KynanUserbot)",
@@ -145,7 +145,7 @@ async def logo_(event):
                 bg_ = await temp.download_media()
     else:
         pics = []
-        async for i in ubot2.iter_messages(
+        async for i in telethn.iter_messages(
             "@AllLogoKynanRobot", filter=InputMessagesFilterPhotos
         ):
             pics.append(i)
@@ -155,7 +155,7 @@ async def logo_(event):
         font_ = random.choice(fpath_)
     if not bg_:
         pics = []
-        async for i in ubot2.iter_messages(
+        async for i in telethn.iter_messages(
             "@AllLogoKynanRobot", filter=InputMessagesFilterPhotos
         ):
             pics.append(i)
@@ -193,7 +193,7 @@ async def logo_(event):
     img.save(flnme, "png")
     await xx.edit("`Uploading`")
     if os.path.exists(flnme):
-        await tbot.send_file(
+        await telethn.send_file(
             event.chat_id,
             file=flnme,
             caption="Logo by [˹ҡʏɴλɴ ꭙ ꝛᴏʙᴏᴛ˼༗](https://t.me/KynanUserbot)",
