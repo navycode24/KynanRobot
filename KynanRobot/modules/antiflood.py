@@ -23,7 +23,7 @@ from KynanRobot.modules.helper_funcs.chat_status import (
     user_admin_no_reply,
 )
 from KynanRobot.modules.helper_funcs.string_handling import extract_time
-from KynanRobot.modules.log_channel import loggable
+from KynanRobot.modules.channel import loggable
 from KynanRobot.modules.sql import antiflood_sql as sql
 from KynanRobot.modules.sql.approve_sql import is_approved
 
