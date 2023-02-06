@@ -92,3 +92,4 @@ qrcode
 flask
 webcolors
 emoji-country-flag
+base64
