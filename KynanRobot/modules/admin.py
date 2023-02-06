@@ -22,7 +22,7 @@ from KynanRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from KynanRobot.modules.log_channel import loggable
+from KynanRobot.modules.channel import loggable
 
 
 @run_async
