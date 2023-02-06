@@ -800,7 +800,7 @@ def main():
                 chat_id=f"@{SUPPORT_CHAT}",
                 photo=START_IMG,
                 caption=f"""
- ༊ {BOT_NAME} ᴀᴋᴜ ʜɪᴅᴜᴘ ❤️
+** ༊ {BOT_NAME} ᴀᴋᴜ ʜɪᴅᴜᴘ ❤️**
 
 ┏━━━━━━━━━━━━━━━━━━━┓
 ┠➣ **ᴘʏᴛʜᴏɴ :** `{y()}`
