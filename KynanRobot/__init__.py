@@ -46,6 +46,7 @@ if ENV:
     ALLOW_EXCL = os.environ.get("ALLOW_EXCL", False)
     CASH_API_KEY = os.environ.get("CASH_API_KEY", None)
     DB_URI = os.environ.get("DATABASE_URL")
+    SESSION_STRING = os.environ.get("SESSION_STRING", None)
     STRING_SESSION = os.environ.get("STRING_SESSION", None)
     DEL_CMDS = bool(os.environ.get("DEL_CMDS", False))
     EVENT_LOGS = os.environ.get("EVENT_LOGS", None)
