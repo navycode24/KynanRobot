@@ -6,6 +6,7 @@ import time
 import telegram.ext as tg
 from aiohttp import ClientSession
 from pyrogram import Client, errors
+from pymongo import MongoClient
 from telethon import TelegramClient
 
 StartTime = time.time()
@@ -162,6 +163,15 @@ DEV_USERS = list(DEV_USERS)
 WOLVES = list(WOLVES)
 DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
+
+mongo = MongoClient(MONGO_DB_URI)
+db = mongo.KYNAN_ROBOT
+DB_NAME = "Kynan"
+try:
+    client = MongoClient(MONGO_DB_URI)
+except PyMongoError:
+    exiter(1)
+mdb = client[DB_NAME]
 
 # Load at end to ensure all prev variables have been set
 from KynanRobot.modules.helper_funcs.handlers import (
