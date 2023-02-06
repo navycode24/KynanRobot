@@ -1,4 +1,4 @@
-━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 <h2 align="center">
 
@@ -12,7 +12,7 @@
 </p>
 
 _**ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [˹ҡʏɴλɴ ꭙ ꝛᴏʙᴏᴛ˼༗](https://t.me/KynanUserbot)**_
-━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 <p align="center">
 <a href="https://github.com/Onlymeriz/KynanRobot/stargazers"><img src="https://img.shields.io/github/stars/Onlymeriz/KynanRobot?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
@@ -25,7 +25,7 @@ _**ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [˹ҡʏɴλɴ ꭙ �
 <a href="https://github.com/Onlymeriz/KynanRobot/commits/Onlymeriz"> <img src="https://img.shields.io/github/last-commit/Onlymeriz/KynanRobot?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
 </p>
 
-━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 <p align="center">
   <img src="https://telegra.ph//file/1d5a4b3398dc3cd1e3c0c.jpg">
@@ -79,7 +79,7 @@ Press `Ctrl+C` when you're done with editing config and `:wq` to save the config
 Press `Ctrl+b` and then `d`
 
 </details>
-━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 <h3 align="center">
     ─「 sᴜᴩᴩᴏʀᴛ 」─
@@ -92,7 +92,7 @@ Press `Ctrl+b` and then `d`
 <a href="https://telegram.me/kontenfilm"><img src="https://img.shields.io/badge/-Support%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
 </p>
 
-━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 <h3 align="center">
     ─「 ᴄʀᴇᴅɪᴛs 」─
@@ -105,4 +105,4 @@ Press `Ctrl+b` and then `d`
  
 <b>ᴀɴᴅ ᴀʟʟ [ᴛʜᴇ ᴄᴏɴᴛʀɪʙᴜᴛᴏʀs](https://github.com/Onlymeriz/KynanRobot/graphs/contributors) ᴡʜᴏ ʜᴇʟᴩᴇᴅ ɪɴ ᴍᴀᴋɪɴɢ ˹ҡʏɴλɴ ꭙ ꝛᴏʙᴏᴛ˼༗ ᴜsᴇғᴜʟ & ᴩᴏᴡᴇʀғᴜʟ 🖤 </b>
 
-━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
