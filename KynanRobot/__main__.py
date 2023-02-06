@@ -72,42 +72,46 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*ʜᴇʏ* {}, 🥀
-
-*๏ ᴛʜɪs ɪs* {} !
-➻ ᴛʜᴇ ᴍᴏsᴛ ᴩᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.
-
-──────────────────
-*๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʜᴇʟᴩ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴍᴏᴅᴜʟᴇs ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs.*
+*ʜᴇʟʟᴏ {} !*
+━━━━━━━━━━━━━━━━━━━━━━━━
+[˹ҡʏɴλɴ ꭙ ꝛᴏʙᴏᴛ˼༗](https://telegra.ph//file/1d5a4b3398dc3cd1e3c0c.jpg) ᴅɪʙᴜᴀᴛ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇʟᴏʟᴀ ᴅᴀɴ ᴍᴇᴍᴜᴛᴀʀ ᴍᴜꜱɪᴋ ᴅɪɢʀᴜᴘ ᴀɴᴅᴀ ᴅᴇɴɢᴀɴ ʙᴇʀʙᴀɢᴀɪ ꜰɪᴛᴜʀ.
+━━━━━━━━━━━━━━━━━━━━━━━━
+➻ ᴜᴘᴛɪᴍᴇ ᐉ `{}`
+➻ ᴜsᴇʀs ᐉ `{}`
+➻ ɢʀᴏᴜᴘꜱ ᐉ `{}`
+━━━━━━━━━━━━━━━━━━━━━━━━
+᳁ ᴛᴇᴋᴀɴ /help ᴀᴛᴀᴜ /mhelp ᴜɴᴛᴜᴋ ᴘᴇʀɪɴᴛᴀʜ ꜱᴀʏᴀ ʏᴀɴɢ ᴛᴇʀꜱᴇᴅɪᴀ.
+━━━━━━━━━━━━━━━━━━━━━━━━
+ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ ʙʏ [↻˹ҡʏɴλɴ˼༗](https://t.me/Riizzvbss)
 """
 
 buttons = [
-    [
+        [
         InlineKeyboardButton(
-            text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
-            url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+            text="➕️ ᴛᴀᴍʙᴀʜᴋᴀɴ Hʏᴘᴇʀ ᴋᴇ ɢʀᴏᴜᴘ ➕️", url="t.me/Ling_Musik_Bot?startgroup=true"
         ),
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴩ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
+        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="t.me/Riizzvbss"
+        ),
+        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="t.me/kynansupport"
+        ),
     ],
     [
-        InlineKeyboardButton(text="❄ ᴀʙᴏᴜᴛ ❄", callback_data="kynan_"),
-        InlineKeyboardButton(text="✨ sᴜᴩᴩᴏʀᴛ ✨", url=f"https://t.me/{SUPPORT_CHAT}"),
-    ],
-    [
-        InlineKeyboardButton(text="🥀 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🥀", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="☁️ sᴏᴜʀᴄᴇ ☁️", callback_data="source_"),
+        InlineKeyboardButton(text="ʙᴀɴᴛᴜᴀɴ", callback_data="kynan_support"
+       ),
+        InlineKeyboardButton(
+            text="ᴅᴏɴᴀsɪ ❤️", callback_data="kynan_own"
+       ),
     ],
 ]
 
-HELP_STRINGS = f"""
-*» {BOT_NAME} ᴇxᴄʟᴜsɪᴠᴇ ꜰᴇᴀᴛᴜʀᴇs*
+HELP_STRINGS = """
+Klik tombol di bawah ini untuk mendapatkan deskripsi tentang perintah spesifik."""
 
-⤖ /start : ꜱᴛᴀʀᴛꜱ ᴍᴇ | ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ᴍᴇ ʏᴏᴜ'ᴠᴇ ᴀʟʀᴇᴀᴅʏ ᴅᴏɴᴇ ɪᴛ.
-⤖ /help  : ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅꜱ ꜱᴇᴄᴛɪᴏɴ.
-  ‣ ɪɴ ᴘᴍ : ᴡɪʟʟ ꜱᴇɴᴅ ʏᴏᴜ ʜᴇʟᴘ ꜰᴏʀ ᴀʟʟ ꜱᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴏᴅᴜʟᴇꜱ.
-  ‣ ɪɴ ɢʀᴏᴜᴘ : ᴡɪʟʟ ʀᴇᴅɪʀᴇᴄᴛ ʏᴏᴜ ᴛᴏ ᴘᴍ, ᴡɪᴛʜ ᴀʟʟ ᴛʜᴀᴛ ʜᴇʟᴘ ᴍᴏᴅᴜʟᴇꜱ."""
+KYNAN_IMG = "https://telegra.ph//file/1d5a4b3398dc3cd1e3c0c.jpg"
+
+DONATE_STRING = """Jika ingin berdonasi agar bot ini tetap hidup, kamu bisa contact @Riizzvbss."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -184,12 +188,12 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="◁", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="⩹", callback_data="help_back")]]
                     ),
                 )
 
             elif args[0].lower() == "markdownhelp":
-                IMPORTED["Exᴛʀᴀs"].markdown_help_sender(update)
+                IMPORTED["ᴇxᴛʀᴀs"].markdown_help_sender(update)
             elif args[0].lower().startswith("stngs_"):
                 match = re.match("stngs_(.*)", args[0].lower())
                 chat = dispatcher.bot.getChat(match.group(1))
@@ -205,15 +209,20 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_text(
-                PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
+                PM_START_TEXT.format(
+                    escape_markdown(first_name),
+                    escape_markdown(uptime),
+                    sql.num_users(),
+                    sql.num_chats()),                        
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
+                disable_web_page_preview=False,
             )
     else:
         update.effective_message.reply_photo(
             START_IMG,
-            caption="ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ !\n<b>ɪ ᴅɪᴅɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ​:</b> <code>{}</code>".format(
+            caption="ʙᴀɴᴛɪɴɢ ᴅᴇᴅᴇ ᴅᴏɴɢ ʙᴀɴɢ ᴀᴀᴠᴠᴠᴠ \n<b>​ ❤️ :</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -292,7 +301,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "» *ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs ꜰᴏʀ* *{}* :\n".format(
+                "➣ *ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs ꜰᴏʀ* *{}* :\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
@@ -302,7 +311,7 @@ def help_button(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="◁", callback_data="help_back")]]
+                    [[InlineKeyboardButton(text="⩹", callback_data="help_back")]]
                 ),
             )
 
@@ -342,118 +351,200 @@ def help_button(update, context):
 
 
 @run_async
-def kynan_about_callback(update: Update, context: CallbackContext):
+def kynan_about_callback(update, context):
     query = update.callback_query
     if query.data == "kynan_":
-        uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
-            text=f"*ʜᴇʏ,*🥀\n  *ᴛʜɪs ɪs {BOT_NAME}*"
-            "\n*ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀꜱɪʟʏ ᴀɴᴅ ᴛᴏ ᴘʀᴏᴛᴇᴄᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ꜰʀᴏᴍ ꜱᴄᴀᴍᴍᴇʀꜱ ᴀɴᴅ ꜱᴘᴀᴍᴍᴇʀꜱ.*"
-            "\n*ᴡʀɪᴛᴛᴇɴ ɪɴ ᴩʏᴛʜᴏɴ ᴡɪᴛʜ sǫʟᴀʟᴄʜᴇᴍʏ ᴀɴᴅ ᴍᴏɴɢᴏᴅʙ ᴀs ᴅᴀᴛᴀʙᴀsᴇ.*"
-            "\n\n────────────────────"
-            f"\n*➻ ᴜᴩᴛɪᴍᴇ »* {uptime}"
-            f"\n*➻ ᴜsᴇʀs »* {sql.num_users()}"
-            f"\n*➻ ᴄʜᴀᴛs »* {sql.num_chats()}"
-            "\n────────────────────"
-            "\n\n⤖  ɪ ᴄᴀɴ ʀᴇꜱᴛʀɪᴄᴛ ᴜꜱᴇʀꜱ."
-            "\n⤖  ɪ ʜᴀᴠᴇ ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴀɴᴛɪ-ꜰʟᴏᴏᴅ ꜱʏꜱᴛᴇᴍ."
-            "\n⤖  ɪ ᴄᴀɴ ɢʀᴇᴇᴛ ᴜꜱᴇʀꜱ ᴡɪᴛʜ ᴄᴜꜱᴛᴏᴍɪᴢᴀʙʟᴇ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇꜱꜱᴀɢᴇꜱ ᴀɴᴅ ᴇᴠᴇɴ ꜱᴇᴛ ᴀ ɢʀᴏᴜᴘ'ꜱ ʀᴜʟᴇꜱ."
-            "\n⤖  ɪ ᴄᴀɴ ᴡᴀʀɴ ᴜꜱᴇʀꜱ ᴜɴᴛɪʟ ᴛʜᴇʏ ʀᴇᴀᴄʜ ᴍᴀx ᴡᴀʀɴꜱ, ᴡɪᴛʜ ᴇᴀᴄʜ ᴘʀᴇᴅᴇꜰɪɴᴇᴅ ᴀᴄᴛɪᴏɴꜱ ꜱᴜᴄʜ ᴀꜱ ʙᴀɴ, ᴍᴜᴛᴇ, ᴋɪᴄᴋ, ᴇᴛᴄ."
-            "\n⤖  ɪ ʜᴀᴠᴇ ᴀ ɴᴏᴛᴇ ᴋᴇᴇᴘɪɴɢ ꜱʏꜱᴛᴇᴍ, ʙʟᴀᴄᴋʟɪꜱᴛꜱ, ᴀɴᴅ ᴇᴠᴇɴ ᴘʀᴇᴅᴇᴛᴇʀᴍɪɴᴇᴅ ʀᴇᴘʟɪᴇꜱ ᴏɴ ᴄᴇʀᴛᴀɪɴ ᴋᴇʏᴡᴏʀᴅꜱ."
-            f"\n\n➻ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ғᴏʀ ɢᴇᴛᴛɪɴɢ ʙᴀsɪᴄ ʜᴇʟᴩ ᴀɴᴅ ɪɴғᴏ ᴀʙᴏᴜᴛ {BOT_NAME}.",
+            text="🎧 ʙᴀɴᴛᴜᴀɴ ᴘᴇʀɪɴᴛᴀʜ ᴍᴜꜱɪᴄ."
+            "\nᴘɪʟɪʜ ᴍᴇɴᴜ ᴅɪ ʙᴀᴡᴀʜ ɪɴɪ ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ʙᴀɴᴛᴜᴀɴ ᴍᴜꜱɪᴄ. ",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [
-                        InlineKeyboardButton(
-                            text="sᴜᴩᴩᴏʀᴛ", callback_data="kynan_support"
-                        ),
-                        InlineKeyboardButton(
-                            text="ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"
-                        ),
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"
-                        ),
-                        InlineKeyboardButton(
-                            text="sᴏᴜʀᴄᴇ",
-                            callback_data="source_",
-                        ),
-                    ],
-                    [
-                        InlineKeyboardButton(text="◁", callback_data="kynan_back"),
-                    ],
-                ]
-            ),
-        )
-    elif query.data == "kynan_support":
-        query.message.edit_text(
-            text="*๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ʜᴇʟᴩ ᴀɴᴅ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍᴇ.*"
-            f"\n\nɪғ ʏᴏᴜ ғᴏᴜɴᴅ ᴀɴʏ ʙᴜɢ ɪɴ {BOT_NAME} ᴏʀ ɪғ ʏᴏᴜ ᴡᴀɴɴᴀ ɢɪᴠᴇ ғᴇᴇᴅʙᴀᴄᴋ ᴀʙᴏᴜᴛ ᴛʜᴇ {BOT_NAME}, ᴩʟᴇᴀsᴇ ʀᴇᴩᴏʀᴛ ɪᴛ ᴀᴛ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ.",
-            parse_mode=ParseMode.MARKDOWN,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(
-                            text="sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
-                        ),
-                        InlineKeyboardButton(
-                            text="ᴜᴩᴅᴀᴛᴇs", url=f"https://t.me/{SUPPORT_CHAT}"
-                        ),
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"
-                        ),
-                        InlineKeyboardButton(
-                            text="ɢɪᴛʜᴜʙ",
-                            url="https://github.com",
-                        ),
-                    ],
-                    [
-                        InlineKeyboardButton(text="⩹", callback_data="kynan_"),
-                    ],
+                 [
+                    InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ ᴀᴅᴍɪɴ", callback_data="kynan_admin"),
+                    InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ ʙᴏᴛ", callback_data="kynan_notes"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ ᴘʟᴀʏ", callback_data="source_"),
+                    InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ ᴇxsᴛʀᴀ", callback_data="kynan_credit"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="⩹", callback_data="kynan_support"),
+                 ]
                 ]
             ),
         )
     elif query.data == "kynan_back":
         first_name = update.effective_user.first_name
+        uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
-            PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
-            reply_markup=InlineKeyboardMarkup(buttons),
+                PM_START_TEXT.format(
+                    escape_markdown(first_name),
+                    escape_markdown(uptime),
+                    sql.num_users(),
+                    sql.num_chats()),
+                reply_markup=InlineKeyboardMarkup(buttons),
+                parse_mode=ParseMode.MARKDOWN,
+                timeout=60,
+                disable_web_page_preview=False,
+        )
+
+    elif query.data == "kynan_admin":
+        query.message.edit_text(
+            text=f"*👮‍♂️ PERINTAH ADMIN."
+            "\n\nc singkatan dari pemutaran Channel."
+            "\n • /pause or /cpause - Jeda musik yang diputar."
+            "\n • /resume or /cresume- Lanjutkan musik yang dijeda."
+            "\n • /mute or /cmute- Matikan musik yang diputar."
+            "\n • /unmute or /cunmute- Suarakan musik yang dibisukan."
+            "\n • /skip or /cskip- Lewati musik yang sedang diputar."
+            "\n • /musicstop or /cstop- Hentikan pemutaran musik."
+            "\n • /shuffle or /cshuffle- Secara acak mengacak daftar putar yang antri."
+            "\n • /seek or /cseek - Teruskan Cari musik sesuai durasi Anda."
+            "\n • /seekback or /cseekback - Mundur Carilah musik sesuai durasi Anda."
+            "\n\n✅Lewati."
+            "\n • /skip or /cskip contoh 3 ."
+            "\n • Melewati musik ke nomor antrian yang ditentukan. Contoh: /skip 3 akan melewatkan musik ke musik antrian ketiga dan akan mengabaikan musik 1 dan 2 dalam antrian."
+            "\n\n✅Loop."
+            "\n • /loop or /cloop [enable/disable] atau [Angka antara 1-10] ."
+            "\n • Saat diaktifkan, bot memutar musik yang sedang diputar menjadi 1-10 kali pada obrolan suara. Default ke 10 kali."
+            "\n\n✅Pengguna Auth."
+            "\nPengguna Auth dapat menggunakan perintah admin tanpa hak admin di Group Anda."
+            "\n • /auth [Username] - Tambahkan pengguna ke AUTH LIST dari grup."
+            "\n • /unauth [Username] - Hapus pengguna dari AUTH LIST grup."
+            "\n • /authusers - Periksa DAFTAR AUTH grup",
+            parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+                [[InlineKeyboardButton(text="⩹", callback_data="kynan_")]]
+            ),
+        )
+    elif query.data == "kynan_notes":
+        query.message.edit_text(
+            text="🤖 PERINTAH BOT"
+            "\n\n • /mstats - Dapatkan 10 Trek Global Stats Teratas, 10 Pengguna Bot Teratas, 10 Obrolan Teratas di bot, 10 Teratas Dimainkan dalam obrolan, dll."
+            "\n\n • /msudolist - Periksa Sudo Pengguna Music,"
+            "\n\n • /lyrics [Nama Musik] mencari Lirik untuk Musik tertentu di web."
+            "\n\n • /song [Nama Trek] atau [Tautan YT] - Unduh trek apa pun dari youtube dalam format mp3 atau mp4."
+            "\n\n • /player -  Dapatkan Panel Bermain interaktif."
+            "\n\n • c singkatan dari pemutaran saluran."
+            "\n\n • /queue or /cqueue- Periksa Daftar Antrian Musik",
+            parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+                [[InlineKeyboardButton(text="⩹", callback_data="kynan_")]]
+            ),
+        )
+    elif query.data == "kynan_support":
+        query.message.edit_text(
+            text="*📝 Bantuan Perintah Hʏᴘᴇʀ*"
+            "\npilih tombol dibawah untuk melihat bantuan perintah.",
             parse_mode=ParseMode.MARKDOWN,
-            timeout=60,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="ᴍᴜsɪᴄ ♬", callback_data="kynan_"),
+                    InlineKeyboardButton(text="✮ ᴍᴀɴᴀɢᴇ", callback_data="help_back"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="⩹", callback_data="kynan_back"),
+                 
+                 ]
+                ]
+            ),
+        )
+
+
+    elif query.data == "kynan_credit":
+        query.message.edit_text(
+            text="➣ PERINTAH EKSTRA"
+            "\n\n✮ Perintah Ekstra."
+            "\n\n • /mstart - Mulai Bot Musik."
+            "\n\n • /mhelp - Dapatkan Menu Pembantu Perintah dengan penjelasan rinci tentang perintah."
+            "\n\n • /mping- Ping Bot dan periksa statistik Ram, Cpu, dll dari Bot."
+            "\n\n✮ Pengaturan Music."
+            "\n • /msettings - Dapatkan pengaturan grup lengkap dengan tombol sebaris."
+            "\n\n༊ Opsi di Pengaturan."
+            "\n\n➊ Kamu Bisa set ingin Kualitas Audio Anda streaming di obrolan suara."
+            "\n\n➋ You can set Kualitas Video Anda ingin streaming di obrolan suara."
+            "\n\n➌ Auth Users:- Anda dapat mengubah mode perintah admin dari sini ke semua orang atau hanya admin. Jika semua orang, siapa pun yang ada di grup Anda dapat menggunakan perintah admin (seperti /skip, /stop dll)."
+            "\n\n➍ Clean Mode: Saat diaktifkan, hapus pesan bot setelah 5 menit dari grup Anda untuk memastikan obrolan Anda tetap bersih dan baik."
+            "\n\n➎ Command Clean : Saat diaktifkan, Bot akan menghapus perintah yang dieksekusi (/play, /pause, /shuffle, /stop etc) langsung."
+            "\n\n➏ Play Settings."
+            "\n\n • /playmode - Dapatkan panel pengaturan pemutaran lengkap dengan tombol tempat Anda dapat mengatur pengaturan pemutaran grup Anda."
+            "\n\n༊ Opsi dalam mode putar."
+            "\n\n➊ Mode Pencarian [Langsung atau Inline] - Mengubah mode pencarian Anda saat Anda memberikan mode /play."
+            "\n\n➋ Perintah Admin [Semua orang atau Admin] - Jika semua orang, siapa pun yang ada di grup Anda akan dapat menggunakan perintah admin (seperti /skip, /stop dll)."
+            "\n\n➌ Jenis Bermain [Everyone or Admins] - Jika admin, hanya admin yang ada di grup yang dapat memutar musik di obrolan suara",
+            parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="⩹", callback_data="kynan_")
+                 ]
+                ]
+            ),
+        )
+    elif query.data == "kynan_own":
+        query.message.edit_text(
+            text="👨‍💻 Untuk yang ingin berdonasi sebagai ucapan terimakasih kepada Pembuat Kynan,"
+            "\n\n Bisa melalui Qris atau Contact",
+            parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="ϙʀɪs", url="https://graph.org/file/2982a27fe0e1500bf5b17.jpg"),
+                    InlineKeyboardButton(text="↻˹ҡʏɴλɴ˼༗", url="t.me/Riizzvbss"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="⩹", callback_data="kynan_back"),
+                 ]
+                ]
+            ),
         )
 
 
 @run_async
-def Source_about_callback(update: Update, context: CallbackContext):
+def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=f"""
-*ʜᴇʏ,
- ᴛʜɪs ɪs {BOT_NAME},
-ᴀɴ ᴏᴩᴇɴ sᴏᴜʀᴄᴇ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ.*
-
-""",
+            text="♬ PERINTAH PLAY."
+            "\n\n༊Perintah Play."
+            "\n\nPerintah yang tersedia = play , vplay , cplay."
+            "\n\nPerintah ForcePlay = playforce , vplayforce , cplayforce."
+            "\n\nc singkatan dari pemutaran Channel."
+            "\nv singkatan dari pemutaran video."
+            "\nforce singkatan dari force play."
+            "\n\n ➣ /play atau /vplay atau /cplay  - Bot akan mulai memainkan kueri yang Anda berikan di obrolan suara atau Streaming tautan langsung di obrolan suara."
+            "\n\n ➣ /playforce atau /vplayforce atau /cplayforce -  Force Play menghentikan trek yang sedang diputar pada obrolan suara dan mulai memutar trek yang dicari secara instan tanpa mengganggu/mengosongkan antrean."
+            "\n\n ➣ /channelplay [Nama pengguna atau id obrolan] atau [Disable] - Hubungkan saluran ke grup dan streaming musik di obrolan suara saluran dari grup Anda."
+            "\n\n༊Daftar Putar Server Bot."
+            "\n ➣ /playlist  - Periksa Daftar Putar Tersimpan Anda Di Server."
+            "\n ➣ /deleteplaylist - Hapus semua musik yang disimpan di daftar putar Anda."
+            "\n ➣ /play  - Mulai mainkan Daftar Putar Tersimpan Anda dari Server",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="◁", callback_data="source_back")]]
+                [
+                 [
+                    InlineKeyboardButton(text="⩹", callback_data="source_back")
+                 ]
+                ]
             ),
         )
     elif query.data == "source_back":
         first_name = update.effective_user.first_name
         query.message.edit_text(
-            PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
-            reply_markup=InlineKeyboardMarkup(buttons),
-            parse_mode=ParseMode.MARKDOWN,
-            timeout=60,
-            disable_web_page_preview=True,
+                PM_START_TEXT.format(
+                    escape_markdown(first_name),
+                    escape_markdown(uptime),
+                    sql.num_users(),
+                    sql.num_chats()),
+                reply_markup=InlineKeyboardMarkup(buttons),
+                parse_mode=ParseMode.MARKDOWN,
+                timeout=60,
+                disable_web_page_preview=True,
         )
 
 
@@ -483,7 +574,7 @@ def get_help(update: Update, context: CallbackContext):
             )
             return
         update.effective_message.reply_text(
-            "» ᴄʜᴏᴏsᴇ ᴀɴ ᴏᴩᴛɪᴏɴ ғᴏʀ ɢᴇᴛᴛɪɴɢ ʜᴇʟᴩ.",
+            "➣ ᴄʜᴏᴏsᴇ ᴀɴ ᴏᴩᴛɪᴏɴ ғᴏʀ ɢᴇᴛᴛɪɴɢ ʜᴇʟᴩ.",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -517,7 +608,7 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="◁", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="⩹", callback_data="help_back")]]
             ),
         )
 
@@ -590,7 +681,7 @@ def settings_button(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="◁",
+                                text="⩹",
                                 callback_data="stngs_back({})".format(chat_id),
                             )
                         ]
@@ -708,7 +799,7 @@ def main():
                 chat_id=f"@{SUPPORT_CHAT}",
                 photo=START_IMG,
                 caption=f"""
-ㅤ༊ {BOT_NAME} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ...
+ ༊ {BOT_NAME} ᴀᴋᴜ ʜɪᴅᴜᴘ
 
 ┏━━━━━━━━━━━━━━━━━━━┓
 ┠➣ **ᴘʏᴛʜᴏɴ :** `{y()}`
@@ -738,6 +829,8 @@ def main():
     )
     source_callback_handler = CallbackQueryHandler(
         Source_about_callback, pattern=r"source_"
+    )
+    donate_handler = CommandHandler("donate", donate
     )
 
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
