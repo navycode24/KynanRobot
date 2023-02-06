@@ -29,7 +29,7 @@ from KynanRobot.modules.helper_funcs.chat_status import (
 )
 from KynanRobot.modules.helper_funcs.extraction import extract_user_and_text
 from KynanRobot.modules.helper_funcs.string_handling import extract_time
-from KynanRobot.modules.log_channel import gloggable, loggable
+from KynanRobot.modules.channel import gloggable, loggable
 
 
 @run_async
