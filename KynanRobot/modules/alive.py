@@ -3,7 +3,8 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from telegram import __version__ as telever
 from telethon import __version__ as tlhver
-
+import os
+import re
 from KynanRobot.events import register
 from KynanRobot import telethn as tbot
 from KynanRobot import BOT_NAME, BOT_USERNAME, OWNER_ID, START_IMG, SUPPORT_CHAT, pbot
@@ -12,7 +13,7 @@ from KynanRobot import BOT_NAME, BOT_USERNAME, OWNER_ID, START_IMG, SUPPORT_CHAT
 PHOTO = "https://telegra.ph//file/b5fa050775543872ae0ec.jpg"
 
 @register(pattern=("/alive"))
-async def awake(_, message: Message):
+async def awake(event):
   TEXT = f"**ʜɪ [{event.sender.first_name}](tg://user?id={event.sender.id}), ᴀᴋᴜ ˹ҡʏɴλɴ ꭙ ꝛᴏʙᴏᴛ˼༗.** \n\n"
   TEXT += "๏ **ᴀᴋᴜ ʜɪᴅᴜᴘ** \n\n"
   TEXT += f"๏ **ᴍʏ ᴏᴡɴᴇʀ : [↻˹ҡʏɴλɴ˼༗](https://t.me/Riizzvbss)** \n\n"
