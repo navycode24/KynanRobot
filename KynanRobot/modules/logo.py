@@ -63,7 +63,7 @@ async def logo_gen(event):
     else:
         pics = []
         async for i in telethn.iter_messages(
-            "@AllLogoKynanRobot", filter=InputMessagesFilterPhotos
+            "@AllLogoHyper", filter=InputMessagesFilterPhotos
         ):
             pics.append(i)
         id_ = random.choice(pics)
@@ -146,7 +146,7 @@ async def logo_(event):
     else:
         pics = []
         async for i in telethn.iter_messages(
-            "@AllLogoKynanRobot", filter=InputMessagesFilterPhotos
+            "@AllLogoHyper", filter=InputMessagesFilterPhotos
         ):
             pics.append(i)
         id_ = random.choice(pics)
@@ -156,7 +156,7 @@ async def logo_(event):
     if not bg_:
         pics = []
         async for i in telethn.iter_messages(
-            "@AllLogoKynanRobot", filter=InputMessagesFilterPhotos
+            "@AllLogoHyper", filter=InputMessagesFilterPhotos
         ):
             pics.append(i)
         id_ = random.choice(pics)
