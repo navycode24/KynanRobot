@@ -67,7 +67,7 @@ search_engine_parser
 pytz
 jikanpy
 tswift
-python-arq==5.0
+python-arq==6.0.5
 envparse
 better_profanity
 textblob
