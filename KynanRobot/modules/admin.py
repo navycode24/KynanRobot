@@ -993,6 +993,36 @@ __help__ = """
 ᐉ /setsticker*:* Set group sticker
 """
 
+__mod_name__ = "ᴀᴅᴍɪɴs"
+__command_list__ = [
+    "setdesc" "setsticker" "setgpic" "delgpic" "setgtitle" "adminlist",
+    "admins",
+    "invitelink",
+    "promote",
+    "fullpromote",
+    "lowpromote",
+    "demote",
+    "admincache",
+]
+__handlers__ = [
+    SET_DESC_HANDLER,
+    SET_STICKER_HANDLER,
+    SETCHATPIC_HANDLER,
+    RMCHATPIC_HANDLER,
+    SETCHAT_TITLE_HANDLER,
+    ADMINLIST_HANDLER,
+    PIN_HANDLER,
+    UNPIN_HANDLER,
+    PINNED_HANDLER,
+    INVITE_HANDLER,
+    PROMOTE_HANDLER,
+    FULLPROMOTE_HANDLER,
+    LOW_PROMOTE_HANDLER,
+    DEMOTE_HANDLER,
+    SET_TITLE_HANDLER,
+    ADMIN_REFRESH_HANDLER,
+]
+
 SET_DESC_HANDLER = CommandHandler("setdesc", set_desc)
 SET_STICKER_HANDLER = CommandHandler("setsticker", set_sticker)
 SETCHATPIC_HANDLER = CommandHandler("setgpic", setchatpic)
@@ -1034,33 +1064,3 @@ dispatcher.add_handler(LOW_PROMOTE_HANDLER)
 dispatcher.add_handler(DEMOTE_HANDLER)
 dispatcher.add_handler(SET_TITLE_HANDLER)
 dispatcher.add_handler(ADMIN_REFRESH_HANDLER)
-
-__mod_name__ = "ᴀᴅᴍɪɴs"
-__command_list__ = [
-    "setdesc" "setsticker" "setgpic" "delgpic" "setgtitle" "adminlist",
-    "admins",
-    "invitelink",
-    "promote",
-    "fullpromote",
-    "lowpromote",
-    "demote",
-    "admincache",
-]
-__handlers__ = [
-    SET_DESC_HANDLER,
-    SET_STICKER_HANDLER,
-    SETCHATPIC_HANDLER,
-    RMCHATPIC_HANDLER,
-    SETCHAT_TITLE_HANDLER,
-    ADMINLIST_HANDLER,
-    PIN_HANDLER,
-    UNPIN_HANDLER,
-    PINNED_HANDLER,
-    INVITE_HANDLER,
-    PROMOTE_HANDLER,
-    FULLPROMOTE_HANDLER,
-    LOW_PROMOTE_HANDLER,
-    DEMOTE_HANDLER,
-    SET_TITLE_HANDLER,
-    ADMIN_REFRESH_HANDLER,
-]
