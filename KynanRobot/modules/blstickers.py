@@ -14,7 +14,7 @@ from KynanRobot.modules.helper_funcs.alternate import send_message
 from KynanRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
 from KynanRobot.modules.helper_funcs.misc import split_message
 from KynanRobot.modules.helper_funcs.string_handling import extract_time
-from KynanRobot.modules.log_channel import loggable
+from KynanRobot.modules.channel import loggable
 from KynanRobot.modules.warns import warn
 
 
