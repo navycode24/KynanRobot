@@ -73,7 +73,7 @@ async def logo_gen(event):
     if not bg_:
         pics = []
         async for i in telethn.iter_messages(
-            "@AllLogoKynanRobot", filter=InputMessagesFilterPhotos
+            "@AllLogoHyper", filter=InputMessagesFilterPhotos
         ):
             pics.append(i)
         id_ = random.choice(pics)
@@ -146,7 +146,7 @@ async def logo_(event):
     else:
         pics = []
         async for i in telethn.iter_messages(
-            "@AllLogoHyper", filter=InputMessagesFilterPhotos
+            "@AllLogoKynanRobot", filter=InputMessagesFilterPhotos
         ):
             pics.append(i)
         id_ = random.choice(pics)
@@ -207,7 +207,7 @@ async def logo_(event):
         if not font_.startswith("./KynanRobot/resources/fonts"):
             os.remove(font_)
 
-__mod_name__ = "Lᴏɢᴏ"
+__mod_name__ = "ʟᴏɢᴏ"
 
 __help__ = """ Ini adalah menu bantuan untuk pembuat logo
 ᐉ /logo <text/name> - Buat logo dengan tampilan acak.

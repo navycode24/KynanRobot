@@ -608,7 +608,7 @@ Group admins/group owners do not need these commands.
  ᐉ /shell*:* Runs shell command
  ᐉ /clearlocals*:* As the name goes
  ᐉ /dbcleanup*:* Removes deleted accs and groups from db
- ❍ /py*:* Runs python code
+ ᐉ /py*:* Runs python code
  
 *Global Bans:*
  ᐉ /gban <id> <reason>*:* Gbans the user, works by reply too

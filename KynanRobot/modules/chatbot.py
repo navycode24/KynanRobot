@@ -110,7 +110,7 @@ def fallen(update: Update, context: CallbackContext):
 
 def fallen_message(context: CallbackContext, message):
     reply_message = message.reply_to_message
-    if message.text.lower() == "kynan":
+    if message.text.lower() == "fallen":
         return True
     elif BOT_USERNAME in message.text.upper():
         return True
@@ -133,7 +133,7 @@ def chatbot(update: Update, context: CallbackContext):
         if not fallen_message(context, message):
             return
         bot.send_chat_action(chat_id, action="typing")
-        url = f"https://kukiapi.xyz/api/apikey=1356469075-KUKIkq4WMg5FV4/KIGO/NULL-CODER/message={sweetie}"
+        url = f"https://kora-api.vercel.app/chatbot/2d94e37d-937f-4d28-9196-bd5552cac68b/{BOT_NAME}/Anonymous/message={message.text}"
         request = requests.get(url)
         results = json.loads(request.text)
         sleep(0.5)
@@ -146,7 +146,7 @@ __help__ = f"""
  ᐉ  /chatbot *:* Shows chatbot control panel
 """
 
-__mod_name__ = "Cʜᴀᴛʙᴏᴛ"
+__mod_name__ = "ᴄʜᴀᴛʙᴏᴛ"
 
 
 CHATBOTK_HANDLER = CommandHandler("chatbot", fallen)

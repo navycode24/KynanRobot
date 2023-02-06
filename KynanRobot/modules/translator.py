@@ -48,8 +48,8 @@ def totranslate(update: Update, context: CallbackContext) -> None:
 __help__ = """
  ᐉ /tr or /tl (language code) as reply to a long message
 *Example:* 
- ᐉ /tr en*:* translates something to english
- ᐉ /tr hi-en*:* translates hindi to english
+ ᐉ /tr id*:* translates something to indonesia
+ ᐉ /tr en-id*:* translates english to indonesia
 
 *Language Codes*
 `af,am,ar,az,be,bg,bn,bs,ca,ceb,co,cs,cy,da,de,el,en,eo,es,
@@ -59,7 +59,7 @@ ml,mn,mr,ms,mt,my,ne,nl,no,ny,pa,pl,ps,pt,ro,ru,sd,si,sk,sl,
 sm,sn,so,sq,sr,st,su,sv,sw,ta,te,tg,th,tl,tr,uk,ur,uz,
 vi,xh,yi,yo,zh,zh_CN,zh_TW,zu`
 """
-__mod_name__ = "Tʀᴀɴsʟᴀᴛᴏʀ"
+__mod_name__ = "ᴛʀᴀɴsʟᴀᴛᴇ"
 
 TRANSLATE_HANDLER = DisableAbleCommandHandler(["tr", "tl"], totranslate)
 

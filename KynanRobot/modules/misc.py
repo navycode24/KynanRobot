@@ -86,12 +86,6 @@ __help__ = """
  ᐉ /markdownhelp*:* quick summary of how markdown works in telegram - can only be called in private chats
 *React:*
  ᐉ /react*:* Reacts with a random reaction 
-*Urban Dictonary:*
- ᐉ /ud <word>*:* Type the word or expression you want to search use
-*Wikipedia:*
- ᐉ /wiki <query>*:* wikipedia your query
-*Wallpapers:*
- ᐉ /wall <query>*:* get a wallpaper from wall.alphacoders.com
 *Currency converter:* 
  ᐉ /cash*:* currency converter
 Example:
@@ -108,7 +102,7 @@ MD_HELP_HANDLER = CommandHandler("markdownhelp", markdown_help)
 dispatcher.add_handler(ECHO_HANDLER)
 dispatcher.add_handler(MD_HELP_HANDLER)
 
-__mod_name__ = "Exᴛʀᴀs"
+__mod_name__ = "ᴇxᴛʀᴀs"
 __command_list__ = ["id", "echo"]
 __handlers__ = [
     ECHO_HANDLER,
