@@ -26,4 +26,4 @@ __help__ = """
 ᐉ /carbon *:* ᴍᴀᴋᴇs ᴄᴀʀʙᴏɴ ɪғ ʀᴇᴩʟɪᴇᴅ ᴛᴏ ᴀ ᴛᴇxᴛ
  """
  
- __mod_name__ = "Carbon"
+__mod_name__ = "Carbon"
