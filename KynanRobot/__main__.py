@@ -355,7 +355,7 @@ def kynan_about_callback(update, context):
     query = update.callback_query
     if query.data == "kynan_":
         query.message.edit_text(
-            text="🎧 ʙᴀɴᴛᴜᴀɴ ᴘᴇʀɪɴᴛᴀʜ ᴍᴜꜱɪᴄ."
+            text="♬ ʙᴀɴᴛᴜᴀɴ ᴘᴇʀɪɴᴛᴀʜ ᴍᴜꜱɪᴄ."
             "\nᴘɪʟɪʜ ᴍᴇɴᴜ ᴅɪ ʙᴀᴡᴀʜ ɪɴɪ ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ʙᴀɴᴛᴜᴀɴ ᴍᴜꜱɪᴄ. ",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -392,28 +392,28 @@ def kynan_about_callback(update, context):
 
     elif query.data == "kynan_admin":
         query.message.edit_text(
-            text=f"*👮‍♂️ PERINTAH ADMIN."
+            text=f"*✮ PERINTAH ADMIN."
             "\n\nc singkatan dari pemutaran Channel."
-            "\n • /pause or /cpause - Jeda musik yang diputar."
-            "\n • /resume or /cresume- Lanjutkan musik yang dijeda."
-            "\n • /mute or /cmute- Matikan musik yang diputar."
-            "\n • /unmute or /cunmute- Suarakan musik yang dibisukan."
-            "\n • /skip or /cskip- Lewati musik yang sedang diputar."
-            "\n • /musicstop or /cstop- Hentikan pemutaran musik."
-            "\n • /shuffle or /cshuffle- Secara acak mengacak daftar putar yang antri."
-            "\n • /seek or /cseek - Teruskan Cari musik sesuai durasi Anda."
-            "\n • /seekback or /cseekback - Mundur Carilah musik sesuai durasi Anda."
+            "\n ➣ /pause or /cpause - Jeda musik yang diputar."
+            "\n ➣ /resume or /cresume- Lanjutkan musik yang dijeda."
+            "\n ➣ /mute or /cmute- Matikan musik yang diputar."
+            "\n ➣ /unmute or /cunmute- Suarakan musik yang dibisukan."
+            "\n ➣ /skip or /cskip- Lewati musik yang sedang diputar."
+            "\n ➣ /musicstop or /cstop- Hentikan pemutaran musik."
+            "\n ➣ /shuffle or /cshuffle- Secara acak mengacak daftar putar yang antri."
+            "\n ➣ /seek or /cseek - Teruskan Cari musik sesuai durasi Anda."
+            "\n ➣ /seekback or /cseekback - Mundur Carilah musik sesuai durasi Anda."
             "\n\n✅Lewati."
-            "\n • /skip or /cskip contoh 3 ."
-            "\n • Melewati musik ke nomor antrian yang ditentukan. Contoh: /skip 3 akan melewatkan musik ke musik antrian ketiga dan akan mengabaikan musik 1 dan 2 dalam antrian."
+            "\n ➣ /skip or /cskip contoh 3 ."
+            "\n ➣ Melewati musik ke nomor antrian yang ditentukan. Contoh: /skip 3 akan melewatkan musik ke musik antrian ketiga dan akan mengabaikan musik 1 dan 2 dalam antrian."
             "\n\n✅Loop."
-            "\n • /loop or /cloop [enable/disable] atau [Angka antara 1-10] ."
-            "\n • Saat diaktifkan, bot memutar musik yang sedang diputar menjadi 1-10 kali pada obrolan suara. Default ke 10 kali."
+            "\n ➣ /loop or /cloop [enable/disable] atau [Angka antara 1-10] ."
+            "\n ➣ Saat diaktifkan, bot memutar musik yang sedang diputar menjadi 1-10 kali pada obrolan suara. Default ke 10 kali."
             "\n\n✅Pengguna Auth."
             "\nPengguna Auth dapat menggunakan perintah admin tanpa hak admin di Group Anda."
-            "\n • /auth [Username] - Tambahkan pengguna ke AUTH LIST dari grup."
-            "\n • /unauth [Username] - Hapus pengguna dari AUTH LIST grup."
-            "\n • /authusers - Periksa DAFTAR AUTH grup",
+            "\n ➣ /auth [Username] - Tambahkan pengguna ke AUTH LIST dari grup."
+            "\n ➣ /unauth [Username] - Hapus pengguna dari AUTH LIST grup."
+            "\n ➣ /authusers - Periksa DAFTAR AUTH grup",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="⩹", callback_data="kynan_")]]
@@ -421,14 +421,14 @@ def kynan_about_callback(update, context):
         )
     elif query.data == "kynan_notes":
         query.message.edit_text(
-            text="🤖 PERINTAH BOT"
-            "\n\n • /mstats - Dapatkan 10 Trek Global Stats Teratas, 10 Pengguna Bot Teratas, 10 Obrolan Teratas di bot, 10 Teratas Dimainkan dalam obrolan, dll."
-            "\n\n • /msudolist - Periksa Sudo Pengguna Music,"
-            "\n\n • /lyrics [Nama Musik] mencari Lirik untuk Musik tertentu di web."
-            "\n\n • /song [Nama Trek] atau [Tautan YT] - Unduh trek apa pun dari youtube dalam format mp3 atau mp4."
-            "\n\n • /player -  Dapatkan Panel Bermain interaktif."
-            "\n\n • c singkatan dari pemutaran saluran."
-            "\n\n • /queue or /cqueue- Periksa Daftar Antrian Musik",
+            text="✮ PERINTAH BOT"
+            "\n\n ➣ /mstats - Dapatkan 10 Trek Global Stats Teratas, 10 Pengguna Bot Teratas, 10 Obrolan Teratas di bot, 10 Teratas Dimainkan dalam obrolan, dll."
+            "\n\n ➣ /msudolist - Periksa Sudo Pengguna Music,"
+            "\n\n ➣ /lyrics [Nama Musik] mencari Lirik untuk Musik tertentu di web."
+            "\n\n ➣ /song [Nama Trek] atau [Tautan YT] - Unduh trek apa pun dari youtube dalam format mp3 atau mp4."
+            "\n\n ➣ /player -  Dapatkan Panel Bermain interaktif."
+            "\n\n ➣ c singkatan dari pemutaran saluran."
+            "\n\n ➣ /queue or /cqueue- Periksa Daftar Antrian Musik",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="⩹", callback_data="kynan_")]]
@@ -456,25 +456,25 @@ def kynan_about_callback(update, context):
 
     elif query.data == "kynan_credit":
         query.message.edit_text(
-            text="➣ PERINTAH EKSTRA"
-            "\n\n✮ Perintah Ekstra."
-            "\n\n • /mstart - Mulai Bot Musik."
-            "\n\n • /mhelp - Dapatkan Menu Pembantu Perintah dengan penjelasan rinci tentang perintah."
-            "\n\n • /mping- Ping Bot dan periksa statistik Ram, Cpu, dll dari Bot."
-            "\n\n✮ Pengaturan Music."
-            "\n • /msettings - Dapatkan pengaturan grup lengkap dengan tombol sebaris."
+            text="♬ PERINTAH EKSTRA"
+            "\n\n༊ Perintah Ekstra."
+            "\n\n ➣ /mstart - Mulai Bot Musik."
+            "\n\n ➣ /mhelp - Dapatkan Menu Pembantu Perintah dengan penjelasan rinci tentang perintah."
+            "\n\n ➣ /mping- Ping Bot dan periksa statistik Ram, Cpu, dll dari Bot."
+            "\n\n༊ Pengaturan Music."
+            "\n ➣ /msettings - Dapatkan pengaturan grup lengkap dengan tombol sebaris."
             "\n\n༊ Opsi di Pengaturan."
-            "\n\n➊ Kamu Bisa set ingin Kualitas Audio Anda streaming di obrolan suara."
-            "\n\n➋ You can set Kualitas Video Anda ingin streaming di obrolan suara."
-            "\n\n➌ Auth Users:- Anda dapat mengubah mode perintah admin dari sini ke semua orang atau hanya admin. Jika semua orang, siapa pun yang ada di grup Anda dapat menggunakan perintah admin (seperti /skip, /stop dll)."
-            "\n\n➍ Clean Mode: Saat diaktifkan, hapus pesan bot setelah 5 menit dari grup Anda untuk memastikan obrolan Anda tetap bersih dan baik."
-            "\n\n➎ Command Clean : Saat diaktifkan, Bot akan menghapus perintah yang dieksekusi (/play, /pause, /shuffle, /stop etc) langsung."
-            "\n\n➏ Play Settings."
+            "\n\n➣ Kamu Bisa set ingin Kualitas Audio Anda streaming di obrolan suara."
+            "\n\n➣ You can set Kualitas Video Anda ingin streaming di obrolan suara."
+            "\n\n➣ Auth Users:- Anda dapat mengubah mode perintah admin dari sini ke semua orang atau hanya admin. Jika semua orang, siapa pun yang ada di grup Anda dapat menggunakan perintah admin (seperti /skip, /stop dll)."
+            "\n\n➣ Clean Mode: Saat diaktifkan, hapus pesan bot setelah 5 menit dari grup Anda untuk memastikan obrolan Anda tetap bersih dan baik."
+            "\n\n➣ Command Clean : Saat diaktifkan, Bot akan menghapus perintah yang dieksekusi (/play, /pause, /shuffle, /stop etc) langsung."
+            "\n\n➣ Play Settings."
             "\n\n • /playmode - Dapatkan panel pengaturan pemutaran lengkap dengan tombol tempat Anda dapat mengatur pengaturan pemutaran grup Anda."
             "\n\n༊ Opsi dalam mode putar."
-            "\n\n➊ Mode Pencarian [Langsung atau Inline] - Mengubah mode pencarian Anda saat Anda memberikan mode /play."
-            "\n\n➋ Perintah Admin [Semua orang atau Admin] - Jika semua orang, siapa pun yang ada di grup Anda akan dapat menggunakan perintah admin (seperti /skip, /stop dll)."
-            "\n\n➌ Jenis Bermain [Everyone or Admins] - Jika admin, hanya admin yang ada di grup yang dapat memutar musik di obrolan suara",
+            "\n\n➣ Mode Pencarian [Langsung atau Inline] - Mengubah mode pencarian Anda saat Anda memberikan mode /play."
+            "\n\n➣ Perintah Admin [Semua orang atau Admin] - Jika semua orang, siapa pun yang ada di grup Anda akan dapat menggunakan perintah admin (seperti /skip, /stop dll)."
+            "\n\n➣ Jenis Bermain [Everyone or Admins] - Jika admin, hanya admin yang ada di grup yang dapat memutar musik di obrolan suara",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -535,6 +535,7 @@ def Source_about_callback(update, context):
         )
     elif query.data == "source_back":
         first_name = update.effective_user.first_name
+        uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
                 PM_START_TEXT.format(
                     escape_markdown(first_name),
