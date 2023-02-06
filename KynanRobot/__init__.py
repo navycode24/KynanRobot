@@ -8,6 +8,13 @@ from aiohttp import ClientSession
 from pyrogram import Client, errors
 from pymongo import MongoClient
 from telethon import TelegramClient
+from telethon.sessions import StringSession
+from telethon.sessions import MemorySession
+from pyrogram.types import Message
+from pyrogram import Client, errors
+from pyrogram.errors.exceptions.bad_request_400 import PeerIdInvalid, ChannelInvalid
+from pyrogram.types import Chat, User
+from ptbcontrib.postgres_persistence import PostgresPersistence
 
 StartTime = time.time()
 
