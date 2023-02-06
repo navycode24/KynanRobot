@@ -140,15 +140,6 @@ def chatbot(update: Update, context: CallbackContext):
         message.reply_text(results["reply"])
 
 
-__help__ = f"""
-*{BOT_NAME} has an chatbot whic provides you a seemingless chatting experience :*
-
- ᐉ  /chatbot *:* Shows chatbot control panel
-"""
-
-__mod_name__ = "ᴄʜᴀᴛʙᴏᴛ"
-
-
 CHATBOTK_HANDLER = CommandHandler("chatbot", fallen)
 ADD_CHAT_HANDLER = CallbackQueryHandler(fallenadd, pattern=r"add_chat")
 RM_CHAT_HANDLER = CallbackQueryHandler(fallenrm, pattern=r"rm_chat")
@@ -162,6 +153,14 @@ dispatcher.add_handler(ADD_CHAT_HANDLER)
 dispatcher.add_handler(CHATBOTK_HANDLER)
 dispatcher.add_handler(RM_CHAT_HANDLER)
 dispatcher.add_handler(CHATBOT_HANDLER)
+
+__help__ = f"""
+*{BOT_NAME} has an chatbot whic provides you a seemingless chatting experience :*
+
+ ᐉ  /chatbot *:* Shows chatbot control panel
+"""
+
+__mod_name__ = "Chatbot"
 
 __handlers__ = [
     ADD_CHAT_HANDLER,

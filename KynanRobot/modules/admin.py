@@ -1035,7 +1035,7 @@ __help__ = """
 ᐉ /setsticker*:* Set group sticker
 """
 
-__mod_name__ = "ᴀᴅᴍɪɴs"
+__mod_name__ = "Admins"
 __command_list__ = [
     "setdesc" "setsticker" "setgpic" "delgpic" "setgtitle" "adminlist",
     "admins",

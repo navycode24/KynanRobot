@@ -64,6 +64,6 @@ __help__ = """
 ᐉ /speedtest *:* Runs a speedtest and check the server speed.
 """
 
-__mod_name__ = "sᴘᴇᴇᴅᴛᴇsᴛ​"
+__mod_name__ = "Speedtest​"
 __command_list__ = ["speedtest"]
 __handlers__ = [SPEED_TEST_HANDLER, SPEED_TEST_CALLBACKHANDLER]

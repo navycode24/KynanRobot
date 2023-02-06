@@ -449,7 +449,23 @@ def __stats__():
     )
 
 
-__mod_name__ = "ʙʟᴀᴄᴋʟɪsᴛ"
+BLACKLIST_HANDLER = DisableAbleCommandHandler(
+    "blacklist", blacklist, pass_args=True, admin_ok=True
+)
+ADD_BLACKLIST_HANDLER = CommandHandler("addblacklist", add_blacklist)
+UNBLACKLIST_HANDLER = CommandHandler("unblacklist", unblacklist)
+BLACKLISTMODE_HANDLER = CommandHandler("blacklistmode", blacklist_mode, pass_args=True)
+BLACKLIST_DEL_HANDLER = MessageHandler(
+    (Filters.text | Filters.command | Filters.sticker | Filters.photo) & Filters.group,
+    del_blacklist,
+    allow_edit=True,
+)
+
+dispatcher.add_handler(BLACKLIST_HANDLER)
+dispatcher.add_handler(ADD_BLACKLIST_HANDLER)
+dispatcher.add_handler(UNBLACKLIST_HANDLER)
+dispatcher.add_handler(BLACKLISTMODE_HANDLER)
+dispatcher.add_handler(BLACKLIST_DEL_HANDLER, group=BLACKLIST_GROUP)
 
 __help__ = """
 
@@ -473,23 +489,7 @@ Note:
  ᐉ <sticker link> can be `https://t.me/addstickers/<sticker>` or just `<sticker>` or reply to the sticker message
 """
 
-BLACKLIST_HANDLER = DisableAbleCommandHandler(
-    "blacklist", blacklist, pass_args=True, admin_ok=True
-)
-ADD_BLACKLIST_HANDLER = CommandHandler("addblacklist", add_blacklist)
-UNBLACKLIST_HANDLER = CommandHandler("unblacklist", unblacklist)
-BLACKLISTMODE_HANDLER = CommandHandler("blacklistmode", blacklist_mode, pass_args=True)
-BLACKLIST_DEL_HANDLER = MessageHandler(
-    (Filters.text | Filters.command | Filters.sticker | Filters.photo) & Filters.group,
-    del_blacklist,
-    allow_edit=True,
-)
-
-dispatcher.add_handler(BLACKLIST_HANDLER)
-dispatcher.add_handler(ADD_BLACKLIST_HANDLER)
-dispatcher.add_handler(UNBLACKLIST_HANDLER)
-dispatcher.add_handler(BLACKLISTMODE_HANDLER)
-dispatcher.add_handler(BLACKLIST_DEL_HANDLER, group=BLACKLIST_GROUP)
+__mod_name__ = "Blacklist"
 
 __handlers__ = [
     BLACKLIST_HANDLER,

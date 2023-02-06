@@ -42,4 +42,4 @@ I can find weather of all cities
  ᐉ /weather moon*:* Get the current status of moon
 """
 
-__mod_name__ = "ᴡᴇᴀᴛʜᴇʀ"
+__mod_name__ = "Weather"

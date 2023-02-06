@@ -539,6 +539,36 @@ def devlist(update: Update, context: CallbackContext):
     m.edit_text(reply, parse_mode=ParseMode.HTML)
 
 
+SUDO_HANDLER = CommandHandler("addsudo", addsudo)
+SUPPORT_HANDLER = CommandHandler(("addsupport", "adddemon"), addsupport)
+TIGER_HANDLER = CommandHandler(("addtiger"), addtiger)
+WHITELIST_HANDLER = CommandHandler(("addwhitelist", "addwolf"), addwhitelist)
+UNSUDO_HANDLER = CommandHandler(("removesudo", "rmsudo"), removesudo)
+UNSUPPORT_HANDLER = CommandHandler(("removesupport", "removedemon"), removesupport)
+UNTIGER_HANDLER = CommandHandler(("removetiger"), removetiger)
+UNWHITELIST_HANDLER = CommandHandler(("removewhitelist", "removewolf"), removewhitelist)
+
+WHITELISTLIST_HANDLER = CommandHandler(["whitelistlist", "wolves"], whitelistlist)
+TIGERLIST_HANDLER = CommandHandler(["tigers"], tigerlist)
+SUPPORTLIST_HANDLER = CommandHandler("supportlist", supportlist)
+SUDOLIST_HANDLER = CommandHandler("sudolist", sudolist)
+DEVLIST_HANDLER = CommandHandler("devlist", devlist)
+
+dispatcher.add_handler(SUDO_HANDLER)
+dispatcher.add_handler(SUPPORT_HANDLER)
+dispatcher.add_handler(TIGER_HANDLER)
+dispatcher.add_handler(WHITELIST_HANDLER)
+dispatcher.add_handler(UNSUDO_HANDLER)
+dispatcher.add_handler(UNSUPPORT_HANDLER)
+dispatcher.add_handler(UNTIGER_HANDLER)
+dispatcher.add_handler(UNWHITELIST_HANDLER)
+
+dispatcher.add_handler(WHITELISTLIST_HANDLER)
+dispatcher.add_handler(TIGERLIST_HANDLER)
+dispatcher.add_handler(SUPPORTLIST_HANDLER)
+dispatcher.add_handler(SUDOLIST_HANDLER)
+dispatcher.add_handler(DEVLIST_HANDLER)
+
 __help__ = f"""
 *⚠️ Notice:*
 Commands listed here only work for users with special access are mainly used for troubleshooting, debugging purposes.
@@ -631,37 +661,7 @@ Group admins/group owners do not need these commands.
 Visit @{SUPPORT_CHAT} for more information.
 """
 
-SUDO_HANDLER = CommandHandler("addsudo", addsudo)
-SUPPORT_HANDLER = CommandHandler(("addsupport", "adddemon"), addsupport)
-TIGER_HANDLER = CommandHandler(("addtiger"), addtiger)
-WHITELIST_HANDLER = CommandHandler(("addwhitelist", "addwolf"), addwhitelist)
-UNSUDO_HANDLER = CommandHandler(("removesudo", "rmsudo"), removesudo)
-UNSUPPORT_HANDLER = CommandHandler(("removesupport", "removedemon"), removesupport)
-UNTIGER_HANDLER = CommandHandler(("removetiger"), removetiger)
-UNWHITELIST_HANDLER = CommandHandler(("removewhitelist", "removewolf"), removewhitelist)
-
-WHITELISTLIST_HANDLER = CommandHandler(["whitelistlist", "wolves"], whitelistlist)
-TIGERLIST_HANDLER = CommandHandler(["tigers"], tigerlist)
-SUPPORTLIST_HANDLER = CommandHandler("supportlist", supportlist)
-SUDOLIST_HANDLER = CommandHandler("sudolist", sudolist)
-DEVLIST_HANDLER = CommandHandler("devlist", devlist)
-
-dispatcher.add_handler(SUDO_HANDLER)
-dispatcher.add_handler(SUPPORT_HANDLER)
-dispatcher.add_handler(TIGER_HANDLER)
-dispatcher.add_handler(WHITELIST_HANDLER)
-dispatcher.add_handler(UNSUDO_HANDLER)
-dispatcher.add_handler(UNSUPPORT_HANDLER)
-dispatcher.add_handler(UNTIGER_HANDLER)
-dispatcher.add_handler(UNWHITELIST_HANDLER)
-
-dispatcher.add_handler(WHITELISTLIST_HANDLER)
-dispatcher.add_handler(TIGERLIST_HANDLER)
-dispatcher.add_handler(SUPPORTLIST_HANDLER)
-dispatcher.add_handler(SUDOLIST_HANDLER)
-dispatcher.add_handler(DEVLIST_HANDLER)
-
-__mod_name__ = "ᴅᴇᴠs"
+__mod_name__ = "Devs"
 __handlers__ = [
     SUDO_HANDLER,
     SUPPORT_HANDLER,

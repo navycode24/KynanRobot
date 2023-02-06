@@ -79,7 +79,7 @@ async def _(event):
     os.remove(ik)
 
 
-__mod_name__ = "Tɪɴʏ"
+__mod_name__ = "Tiny"
 __help__ = """
 ᐉ /tiny*:* reply a sticker and see magic
 """

@@ -324,23 +324,6 @@ def weebify(update: Update, context: CallbackContext):
         message.reply_text(string)
 
 
-__help__ = """
- ᐉ /runs*:* reply a random string from an array of replies
- ᐉ /slap*:* slap a user, or get slapped if not a reply
- ᐉ /shrug*:* get shrug XD
- ᐉ /table*:* get flip/unflip :v
- ᐉ /decide*:* Randomly answers yes/no/maybe
- ᐉ /toss*:* Tosses A coin
- ᐉ /bluetext*:* check urself :V
- ᐉ /roll*:* Roll a dice
- ᐉ /rlg*:* Join ears,nose,mouth and create an emo ;-;
- ᐉ /shout <keyword>*:* write anything you want to give loud shout
- ᐉ /weebify <text>*:* returns a weebified text
- ᐉ /sanitize*:* always use this before /pat or any contact
- ᐉ /pat*:* pats a user, or get patted
- ᐉ /8ball*:* predicts using 8ball method 
-"""
-
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize)
 RUNS_HANDLER = DisableAbleCommandHandler("runs", runs)
 SLAP_HANDLER = DisableAbleCommandHandler("slap", slap)
@@ -371,7 +354,24 @@ dispatcher.add_handler(DECIDE_HANDLER)
 dispatcher.add_handler(EIGHTBALL_HANDLER)
 dispatcher.add_handler(TABLE_HANDLER)
 
-__mod_name__ = "ғᴜɴ​"
+__help__ = """
+ ᐉ /runs*:* reply a random string from an array of replies
+ ᐉ /slap*:* slap a user, or get slapped if not a reply
+ ᐉ /shrug*:* get shrug XD
+ ᐉ /table*:* get flip/unflip :v
+ ᐉ /decide*:* Randomly answers yes/no/maybe
+ ᐉ /toss*:* Tosses A coin
+ ᐉ /bluetext*:* check urself :V
+ ᐉ /roll*:* Roll a dice
+ ᐉ /rlg*:* Join ears,nose,mouth and create an emo ;-;
+ ᐉ /shout <keyword>*:* write anything you want to give loud shout
+ ᐉ /weebify <text>*:* returns a weebified text
+ ᐉ /sanitize*:* always use this before /pat or any contact
+ ᐉ /pat*:* pats a user, or get patted
+ ᐉ /8ball*:* predicts using 8ball method 
+"""
+
+__mod_name__ = "Fun​"
 __command_list__ = [
     "runs",
     "slap",

@@ -161,7 +161,7 @@ When marked as AFK, any mentions will be replied to with a message to say you're
 """
 
 
-__mod_name__ = "ᴀғᴋ​"
+__mod_name__ = "Afk​"
 __command_list__ = ["afk"]
 __handlers__ = [
     (AFK_HANDLER, AFK_GROUP),

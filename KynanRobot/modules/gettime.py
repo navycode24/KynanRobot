@@ -92,6 +92,10 @@ def gettime(update: Update, context: CallbackContext):
     )
 
 
+TIME_HANDLER = DisableAbleCommandHandler("time", gettime)
+
+dispatcher.add_handler(TIME_HANDLER)
+
 __help__ = """
  ᐉ /time <query>*:* Gives information about a timezone.
 *Available queries:* Country Code/Country Name/Timezone Name
@@ -100,10 +104,6 @@ __help__ = """
 💡 Ex:- /time IN *:* It will shows Indian current time and date..
 """
 
-TIME_HANDLER = DisableAbleCommandHandler("time", gettime)
-
-dispatcher.add_handler(TIME_HANDLER)
-
-__mod_name__ = "ᴛɪᴍᴇ"
+__mod_name__ = "Time"
 __command_list__ = ["time"]
 __handlers__ = [TIME_HANDLER]

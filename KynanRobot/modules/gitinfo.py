@@ -45,7 +45,7 @@ async def github(_, message):
     await message.reply_photo(photo=avatar_url, caption=caption)
 
 
-__mod_name__ = "ɢɪᴛʜᴜʙ"
+__mod_name__ = "Github "
 
 __help__ = """
 I will give information about github profile 

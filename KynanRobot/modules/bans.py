@@ -400,17 +400,6 @@ def selfunban(context: CallbackContext, update: Update) -> str:
     return log
 
 
-__help__ = """
- ᐉ /kickme*:* kicks the user who issued the command
-
-*Admins only:*
- ᐉ /ban <userhandle>*:* bans a user. (via handle, or reply)
- ᐉ /sban <userhandle>*:* Silently ban a user. Deletes command, Replied message and doesn't reply. (via handle, or reply)
- ᐉ /tban <userhandle> x(m/h/d)*:* bans a user for `x` time. (via handle, or reply). `m` = `minutes`, `h` = `hours`, `d` = `days`.
- ᐉ /unban <userhandle>*:* unbans a user. (via handle, or reply)
- ᐉ /kick <userhandle>*:* kicks a user out of the group, (via handle, or reply)
-"""
-
 BAN_HANDLER = CommandHandler(["ban", "sban"], ban)
 TEMPBAN_HANDLER = CommandHandler(["tban"], temp_ban)
 KICK_HANDLER = CommandHandler("kick", kick)
@@ -425,7 +414,19 @@ dispatcher.add_handler(UNBAN_HANDLER)
 dispatcher.add_handler(ROAR_HANDLER)
 dispatcher.add_handler(KICKME_HANDLER)
 
-__mod_name__ = "ʙᴀɴ​"
+
+__help__ = """
+ ᐉ /kickme*:* kicks the user who issued the command
+
+*Admins only:*
+ ᐉ /ban <userhandle>*:* bans a user. (via handle, or reply)
+ ᐉ /sban <userhandle>*:* Silently ban a user. Deletes command, Replied message and doesn't reply. (via handle, or reply)
+ ᐉ /tban <userhandle> x(m/h/d)*:* bans a user for `x` time. (via handle, or reply). `m` = `minutes`, `h` = `hours`, `d` = `days`.
+ ᐉ /unban <userhandle>*:* unbans a user. (via handle, or reply)
+ ᐉ /kick <userhandle>*:* kicks a user out of the group, (via handle, or reply)
+"""
+
+__mod_name__ = "Ban​"
 __handlers__ = [
     BAN_HANDLER,
     TEMPBAN_HANDLER,

@@ -58,4 +58,4 @@ __help__ = """
 """
 
 
-__mod_name__ = "ᴢᴏᴍʙɪᴇs"
+__mod_name__ = "Zombie"

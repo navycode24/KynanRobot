@@ -192,19 +192,6 @@ if is_module_loaded(FILENAME):
             return f"This group has all it's logs sent to: {escape_markdown(log_channel_info.title)} (`{log_channel}`)"
         return "No log channel is set for this group!"
 
-    __help__ = """
-*Admins only:*
- ᐉ /logchannel*:* get log channel info
- ᐉ /setlog*:* set the log channel.
- ᐉ /unsetlog*:* unset the log channel.
-
-Setting the log channel is done by:
-ᐉ adding the bot to the desired channel (as an admin!)
-ᐉ sending /setlog in the channel
-ᐉ forwarding the /setlog to the group
-"""
-
-    __mod_name__ = "ʟᴏɢ ᴄʜᴀɴɴᴇʟ​"
 
     LOG_HANDLER = CommandHandler("logchannel", logging)
     SET_LOG_HANDLER = CommandHandler("setlog", setlog)
@@ -221,3 +208,18 @@ else:
 
     def gloggable(func):
         return func
+
+
+    __help__ = """
+*Admins only:*
+ ᐉ /logchannel*:* get log channel info
+ ᐉ /setlog*:* set the log channel.
+ ᐉ /unsetlog*:* unset the log channel.
+
+Setting the log channel is done by:
+ᐉ adding the bot to the desired channel (as an admin!)
+ᐉ sending /setlog in the channel
+ᐉ forwarding the /setlog to the group
+"""
+
+    __mod_name__ = "Log-Channel​"

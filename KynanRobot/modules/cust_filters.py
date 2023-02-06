@@ -606,6 +606,25 @@ def __chat_settings__(chat_id, user_id):
     return "There are `{}` custom filters here.".format(len(cust_filters))
 
 
+FILTER_HANDLER = CommandHandler("filter", filters)
+STOP_HANDLER = CommandHandler("stop", stop_filter)
+RMALLFILTER_HANDLER = CommandHandler(
+    "removeallfilters", rmall_filters, filters=Filters.group
+)
+RMALLFILTER_CALLBACK = CallbackQueryHandler(rmall_callback, pattern=r"filters_.*")
+LIST_HANDLER = DisableAbleCommandHandler("filters", list_handlers, admin_ok=True)
+CUST_FILTER_HANDLER = MessageHandler(
+    CustomFilters.has_text & ~Filters.update.edited_message, reply_filter
+)
+
+dispatcher.add_handler(FILTER_HANDLER)
+dispatcher.add_handler(STOP_HANDLER)
+dispatcher.add_handler(LIST_HANDLER)
+dispatcher.add_handler(CUST_FILTER_HANDLER, HANDLER_GROUP)
+dispatcher.add_handler(RMALLFILTER_HANDLER)
+dispatcher.add_handler(RMALLFILTER_CALLBACK)
+
+
 __help__ = """
  ᐉ /filters*:* List all active filters saved in the chat.
 
@@ -632,25 +651,7 @@ Check ᐉ /markdownhelp to know more!
 
 """
 
-__mod_name__ = "ғɪʟᴛᴇʀs"
-
-FILTER_HANDLER = CommandHandler("filter", filters)
-STOP_HANDLER = CommandHandler("stop", stop_filter)
-RMALLFILTER_HANDLER = CommandHandler(
-    "removeallfilters", rmall_filters, filters=Filters.group
-)
-RMALLFILTER_CALLBACK = CallbackQueryHandler(rmall_callback, pattern=r"filters_.*")
-LIST_HANDLER = DisableAbleCommandHandler("filters", list_handlers, admin_ok=True)
-CUST_FILTER_HANDLER = MessageHandler(
-    CustomFilters.has_text & ~Filters.update.edited_message, reply_filter
-)
-
-dispatcher.add_handler(FILTER_HANDLER)
-dispatcher.add_handler(STOP_HANDLER)
-dispatcher.add_handler(LIST_HANDLER)
-dispatcher.add_handler(CUST_FILTER_HANDLER, HANDLER_GROUP)
-dispatcher.add_handler(RMALLFILTER_HANDLER)
-dispatcher.add_handler(RMALLFILTER_CALLBACK)
+__mod_name__ = "Filters"
 
 __handlers__ = [
     FILTER_HANDLER,

@@ -366,8 +366,11 @@ def get_chat(chat_id, chat_data):
     except KeyError:
         return {"status": False, "value": False}
 
+IMPORT_HANDLER = CommandHandler("import", import_data)
+EXPORT_HANDLER = CommandHandler("export", export_data, pass_chat_data=True)
 
-__mod_name__ = "ʙᴀᴄᴋᴜᴘ"
+dispatcher.add_handler(IMPORT_HANDLER)
+dispatcher.add_handler(EXPORT_HANDLER)
 
 __help__ = """
 *Only for group owner:*
@@ -379,8 +382,4 @@ __help__ = """
 
 """
 
-IMPORT_HANDLER = CommandHandler("import", import_data)
-EXPORT_HANDLER = CommandHandler("export", export_data, pass_chat_data=True)
-
-dispatcher.add_handler(IMPORT_HANDLER)
-dispatcher.add_handler(EXPORT_HANDLER)
+__mod_name__ = "Backup"

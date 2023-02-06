@@ -124,7 +124,7 @@ def sed(update: Update, context: CallbackContext):
             update.effective_message.reply_to_message.reply_text(text)
 
 
-__mod_name__ = "Sed/Regex"
+__mod_name__ = "Regex"
 
 SED_HANDLER = DisableAbleMessageHandler(
     Filters.regex(r"s([{}]).*?\1.*".format("".join(DELIMITERS))), sed, friendly="sed"

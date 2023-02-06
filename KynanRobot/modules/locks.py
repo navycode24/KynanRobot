@@ -562,6 +562,22 @@ def __chat_settings__(chat_id, user_id):
     return build_lock_message(chat_id)
 
 
+LOCKTYPES_HANDLER = DisableAbleCommandHandler("locktypes", locktypes)
+LOCK_HANDLER = CommandHandler("lock", lock, pass_args=True)  # , filters=Filters.group)
+UNLOCK_HANDLER = CommandHandler(
+    "unlock", unlock, pass_args=True
+)  # , filters=Filters.group)
+LOCKED_HANDLER = CommandHandler("locks", list_locks)  # , filters=Filters.group)
+
+dispatcher.add_handler(LOCK_HANDLER)
+dispatcher.add_handler(UNLOCK_HANDLER)
+dispatcher.add_handler(LOCKTYPES_HANDLER)
+dispatcher.add_handler(LOCKED_HANDLER)
+
+dispatcher.add_handler(
+    MessageHandler(Filters.all & Filters.group, del_lockables), PERM_GROUP
+)
+
 __help__ = """
 Do stickers annoy you? or want to avoid people sharing links? or pictures? \
 You're in the right place!
@@ -586,20 +602,4 @@ Locking bots will stop non-admins from adding bots to the chat.
  • Unlocking permission *pin* will allow members (non-admins) to pin a message in a group
 """
 
-__mod_name__ = "ʟᴏᴄᴋ"
-
-LOCKTYPES_HANDLER = DisableAbleCommandHandler("locktypes", locktypes)
-LOCK_HANDLER = CommandHandler("lock", lock, pass_args=True)  # , filters=Filters.group)
-UNLOCK_HANDLER = CommandHandler(
-    "unlock", unlock, pass_args=True
-)  # , filters=Filters.group)
-LOCKED_HANDLER = CommandHandler("locks", list_locks)  # , filters=Filters.group)
-
-dispatcher.add_handler(LOCK_HANDLER)
-dispatcher.add_handler(UNLOCK_HANDLER)
-dispatcher.add_handler(LOCKTYPES_HANDLER)
-dispatcher.add_handler(LOCKED_HANDLER)
-
-dispatcher.add_handler(
-    MessageHandler(Filters.all & Filters.group, del_lockables), PERM_GROUP
-)
+__mod_name__ = "Locks"

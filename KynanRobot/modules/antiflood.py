@@ -399,6 +399,22 @@ def __chat_settings__(chat_id, user_id):
         return "Antiflood has been set to`{}`.".format(limit)
 
 
+FLOOD_BAN_HANDLER = MessageHandler(
+    Filters.all & ~Filters.status_update & Filters.group, check_flood
+)
+SET_FLOOD_HANDLER = CommandHandler("setflood", set_flood, filters=Filters.group)
+SET_FLOOD_MODE_HANDLER = CommandHandler(
+    "setfloodmode", set_flood_mode, pass_args=True
+)  # , filters=Filters.group)
+FLOOD_QUERY_HANDLER = CallbackQueryHandler(flood_button, pattern=r"unmute_flooder")
+FLOOD_HANDLER = CommandHandler("flood", flood, filters=Filters.group)
+
+dispatcher.add_handler(FLOOD_BAN_HANDLER, FLOOD_GROUP)
+dispatcher.add_handler(FLOOD_QUERY_HANDLER)
+dispatcher.add_handler(SET_FLOOD_HANDLER)
+dispatcher.add_handler(SET_FLOOD_MODE_HANDLER)
+dispatcher.add_handler(FLOOD_HANDLER)
+
 __help__ = """
 *Antiflood* allows you to take action on users that send more than x messages in a row. Exceeding the set flood \
 will result in restricting that user.
@@ -418,23 +434,7 @@ will result in restricting that user.
  `1w` = 1 week
  """
 
-__mod_name__ = "ᴀɴᴛɪғʟᴏᴏᴅ"
-
-FLOOD_BAN_HANDLER = MessageHandler(
-    Filters.all & ~Filters.status_update & Filters.group, check_flood
-)
-SET_FLOOD_HANDLER = CommandHandler("setflood", set_flood, filters=Filters.group)
-SET_FLOOD_MODE_HANDLER = CommandHandler(
-    "setfloodmode", set_flood_mode, pass_args=True
-)  # , filters=Filters.group)
-FLOOD_QUERY_HANDLER = CallbackQueryHandler(flood_button, pattern=r"unmute_flooder")
-FLOOD_HANDLER = CommandHandler("flood", flood, filters=Filters.group)
-
-dispatcher.add_handler(FLOOD_BAN_HANDLER, FLOOD_GROUP)
-dispatcher.add_handler(FLOOD_QUERY_HANDLER)
-dispatcher.add_handler(SET_FLOOD_HANDLER)
-dispatcher.add_handler(SET_FLOOD_MODE_HANDLER)
-dispatcher.add_handler(FLOOD_HANDLER)
+__mod_name__ = "Antiflood"
 
 __handlers__ = [
     (FLOOD_BAN_HANDLER, FLOOD_GROUP),

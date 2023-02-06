@@ -207,7 +207,6 @@ async def logo_(event):
         if not font_.startswith("./KynanRobot/resources/fonts"):
             os.remove(font_)
 
-__mod_name__ = "ʟᴏɢᴏ"
 
 __help__ = """ Ini adalah menu bantuan untuk pembuat logo
 ᐉ /logo <text/name> - Buat logo dengan tampilan acak.
@@ -215,3 +214,5 @@ __help__ = """ Ini adalah menu bantuan untuk pembuat logo
  Editor Gambar :
 ᐉ  /edit <balas foto> -  untuk edit.
 """
+
+__mod_name__ = "Logo"
