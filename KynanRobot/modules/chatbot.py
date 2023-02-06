@@ -26,7 +26,7 @@ from telegram.utils.helpers import mention_html
 import KynanRobot.modules.sql.chatbot_sql as sql
 from KynanRobot import BOT_ID, BOT_NAME, BOT_USERNAME, dispatcher
 from KynanRobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
-from KynanRobot.modules.log_channel import gloggable
+from KynanRobot.modules.channel import gloggable
 
 
 @run_async
