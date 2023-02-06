@@ -46,6 +46,7 @@ if ENV:
     ALLOW_EXCL = os.environ.get("ALLOW_EXCL", False)
     CASH_API_KEY = os.environ.get("CASH_API_KEY", None)
     DB_URI = os.environ.get("DATABASE_URL")
+    STRING_SESSION = os.environ.get("STRING_SESSION", None)
     DEL_CMDS = bool(os.environ.get("DEL_CMDS", False))
     EVENT_LOGS = os.environ.get("EVENT_LOGS", None)
     INFOPIC = bool(os.environ.get("INFOPIC", "True"))
@@ -53,7 +54,7 @@ if ENV:
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
     NO_LOAD = os.environ.get("NO_LOAD", "").split()
     START_IMG = os.environ.get(
-        "START_IMG", "https://telegra.ph//file/b5fa050775543872ae0ec.jpg"
+        "START_IMG", "httpSTRING_SESSION = os.environ.get("STRING_SESSION", None)s://telegra.ph//file/b5fa050775543872ae0ec.jpg"
     )
     STRICT_GBAN = bool(os.environ.get("STRICT_GBAN", True))
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "kynansupport")
@@ -102,6 +103,7 @@ else:
     ALLOW_EXCL = Config.ALLOW_EXCL
     CASH_API_KEY = Config.CASH_API_KEY
     DB_URI = Config.DATABASE_URL
+    STRING_SESSION = Config.STRING_SESSION
     DEL_CMDS = Config.DEL_CMDS
     EVENT_LOGS = Config.EVENT_LOGS
     INFOPIC = Config.INFOPIC
