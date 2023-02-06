@@ -463,6 +463,15 @@ Admin only:
  ᐉ /addblacklist <triggers>*:* Add a trigger to the blacklist. Each line is considered one trigger, so using different lines will allow you to add multiple triggers.
  ᐉ /unblacklist <triggers>*:* Remove triggers from the blacklist. Same newline logic applies here, so you can remove multiple triggers at once.
  ᐉ /blacklistmode <off/del/warn/ban/kick/mute/tban/tmute>*:* Action to perform when someone sends blacklisted words.
+  ᐉ /blsticker*:* See current blacklisted sticker
+*Only admin:*
+ ᐉ /addblsticker <sticker link>*:* Add the sticker trigger to the black list. Can be added via reply sticker
+ ᐉ /unblsticker <sticker link>*:* Remove triggers from blacklist. The same newline logic applies here, so you can delete multiple triggers at once
+ ᐉ /rmblsticker <sticker link>*:* Same as above
+ ᐉ /blstickermode <ban/tban/mute/tmute>*:* sets up a default action on what to do if users use blacklisted stickers
+Note:
+ ᐉ <sticker link> can be `https://t.me/addstickers/<sticker>` or just `<sticker>` or reply to the sticker message
+"""
 """
 
 BLACKLIST_HANDLER = DisableAbleCommandHandler(
