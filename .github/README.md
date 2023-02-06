@@ -28,10 +28,6 @@ _**ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [˹ҡʏɴλɴ ꭙ �
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 <p align="center">
-  <img src="https://telegra.ph//file/1d5a4b3398dc3cd1e3c0c.jpg">
-</p>
-
-<p align="center">
 <b>𝗗𝗘𝗣𝗟𝗢𝗬𝗠𝗘𝗡𝗧 𝗠𝗘𝗧𝗛𝗢𝗗𝗦</b>
 </p>
 
