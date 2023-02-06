@@ -830,8 +830,6 @@ def main():
     source_callback_handler = CallbackQueryHandler(
         Source_about_callback, pattern=r"source_"
     )
-    donate_handler = CommandHandler("donate", donate
-    )
 
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
 
