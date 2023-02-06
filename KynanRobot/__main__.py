@@ -86,15 +86,10 @@ PM_START_TEXT = """
 """
 
 buttons = [
-        [
-        InlineKeyboardButton(
-            text="➕️ ᴛᴀᴍʙᴀʜᴋᴀɴ ˹ҡʏɴλɴ ꭙ ꝛᴏʙᴏᴛ˼༗ ᴋᴇ ɢʀᴏᴜᴘ ➕️", url="t.me/KynanUserbot?startgroup=true"
-        ),
-    ],
     [
         InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="t.me/Riizzvbss"
         ),
-        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="t.me/kynansupport"
+        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="t.me/{SUPPORT_CHAT}"
         ),
     ],
     [
@@ -104,6 +99,11 @@ buttons = [
             text="ᴅᴏɴᴀsɪ ❤️", callback_data="kynan_own"
        ),
     ],
+    [
+        InlineKeyboardButton(
+            text="ᴛᴀᴍʙᴀʜᴋᴀɴ ᴀᴋᴜ ᴅɪʜᴀᴛɪᴍᴜ ❤️", url="t.me/{BOT_USERNAME}?startgroup=true"
+        ),
+     ],
 ]
 
 HELP_STRINGS = """
@@ -403,13 +403,13 @@ def kynan_about_callback(update, context):
             "\n ➣ /shuffle or /cshuffle- Secara acak mengacak daftar putar yang antri."
             "\n ➣ /seek or /cseek - Teruskan Cari musik sesuai durasi Anda."
             "\n ➣ /seekback or /cseekback - Mundur Carilah musik sesuai durasi Anda."
-            "\n\n✅Lewati."
+            "\n\n༊Lewati."
             "\n ➣ /skip or /cskip contoh 3 ."
             "\n ➣ Melewati musik ke nomor antrian yang ditentukan. Contoh: /skip 3 akan melewatkan musik ke musik antrian ketiga dan akan mengabaikan musik 1 dan 2 dalam antrian."
-            "\n\n✅Loop."
+            "\n\n༊Loop."
             "\n ➣ /loop or /cloop [enable/disable] atau [Angka antara 1-10] ."
             "\n ➣ Saat diaktifkan, bot memutar musik yang sedang diputar menjadi 1-10 kali pada obrolan suara. Default ke 10 kali."
-            "\n\n✅Pengguna Auth."
+            "\n\n༊Pengguna Auth."
             "\nPengguna Auth dapat menggunakan perintah admin tanpa hak admin di Group Anda."
             "\n ➣ /auth [Username] - Tambahkan pengguna ke AUTH LIST dari grup."
             "\n ➣ /unauth [Username] - Hapus pengguna dari AUTH LIST grup."
@@ -800,7 +800,7 @@ def main():
                 chat_id=f"@{SUPPORT_CHAT}",
                 photo=START_IMG,
                 caption=f"""
- ༊ {BOT_NAME} ᴀᴋᴜ ʜɪᴅᴜᴘ
+ ༊ {BOT_NAME} ᴀᴋᴜ ʜɪᴅᴜᴘ ❤️
 
 ┏━━━━━━━━━━━━━━━━━━━┓
 ┠➣ **ᴘʏᴛʜᴏɴ :** `{y()}`
