@@ -44,3 +44,4 @@ telethon==1.27.0
 tgcrypto==1.2.5
 wikipedia==1.4.0
 webcolors
+ptbcontrib
