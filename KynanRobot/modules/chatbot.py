@@ -26,7 +26,7 @@ from telegram.utils.helpers import mention_html
 import KynanRobot.modules.sql.chatbot_sql as sql
 from KynanRobot import BOT_ID, BOT_NAME, BOT_USERNAME, dispatcher
 from KynanRobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
-from KynanRobot.modules.channel import gloggable
+from KynanRobot.modules.log_channel import gloggable
 
 
 @run_async
@@ -133,7 +133,7 @@ def chatbot(update: Update, context: CallbackContext):
         if not fallen_message(context, message):
             return
         bot.send_chat_action(chat_id, action="typing")
-        url = f"https://kora-api.vercel.app/chatbot/2d94e37d-937f-4d28-9196-bd5552cac68b/{BOT_NAME}/envparse/message={message.text}"
+        url = f"https://kora-api.vercel.app/chatbot/2d94e37d-937f-4d28-9196-bd5552cac68b/{BOT_NAME}/Anonymous/message={message.text}"
         request = requests.get(url)
         results = json.loads(request.text)
         sleep(0.5)

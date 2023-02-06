@@ -42,7 +42,7 @@ from KynanRobot.modules.helper_funcs.extraction import (
 from KynanRobot.modules.helper_funcs.filters import CustomFilters
 from KynanRobot.modules.helper_funcs.misc import split_message
 from KynanRobot.modules.helper_funcs.string_handling import split_quotes
-from KynanRobot.modules.channel import loggable
+from KynanRobot.modules.log_channel import loggable
 from KynanRobot.modules.sql import warns_sql as sql
 from KynanRobot.modules.sql.approve_sql import is_approved
 

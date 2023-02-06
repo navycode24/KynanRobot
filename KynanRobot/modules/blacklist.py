@@ -15,7 +15,7 @@ from KynanRobot.modules.helper_funcs.chat_status import user_admin, user_not_adm
 from KynanRobot.modules.helper_funcs.extraction import extract_text
 from KynanRobot.modules.helper_funcs.misc import split_message
 from KynanRobot.modules.helper_funcs.string_handling import extract_time
-from KynanRobot.modules.channel import loggable
+from KynanRobot.modules.log_channel import loggable
 from KynanRobot.modules.sql.approve_sql import is_approved
 from KynanRobot.modules.warns import warn
 

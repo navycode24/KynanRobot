@@ -10,7 +10,7 @@ from KynanRobot import DRAGONS, dispatcher
 from KynanRobot.modules.disable import DisableAbleCommandHandler
 from KynanRobot.modules.helper_funcs.chat_status import user_admin
 from KynanRobot.modules.helper_funcs.extraction import extract_user
-from KynanRobot.modules.channel import loggable
+from KynanRobot.modules.log_channel import loggable
 
 
 @loggable
