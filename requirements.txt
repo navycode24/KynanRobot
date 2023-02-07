@@ -48,3 +48,4 @@ python-arq
 spamwatch
 gtts
 better_profanity
+envparse
