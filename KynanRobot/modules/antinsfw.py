@@ -159,4 +159,10 @@ async def nsfw_enable_disable(_, message):
         await message.reply_text("Suffix Tidak Diketahui, Gunakan /antinsfw [on/off]")
 
 
-__mod_name__ = "Anti-NSFW​"
+__help__ = """
+
+ᐉ /nsfwscan - NSFW Scan
+ᐉ /antinsfw - NSFW On/Off
+ """
+
+__mod_name__ = "Anti-NSFW"
