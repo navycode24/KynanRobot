@@ -52,3 +52,5 @@ envparse
 textblob
 nudepy
 nekos.py
+googletrans
+google-trans-new
