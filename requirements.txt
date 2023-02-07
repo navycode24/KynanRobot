@@ -45,3 +45,4 @@ tgcrypto==1.2.5
 wikipedia==1.4.0
 webcolors
 python-arq
+spamwatch
