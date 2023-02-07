@@ -49,3 +49,6 @@ spamwatch
 gtts
 better_profanity
 envparse
+textblob
+nudepy
+nekos.py
