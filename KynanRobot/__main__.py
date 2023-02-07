@@ -487,7 +487,7 @@ def kynan_about_callback(update, context):
         )
     elif query.data == "kynan_own":
         query.message.edit_text(
-            text="👨‍💻 Untuk yang ingin berdonasi sebagai ucapan terimakasih kepada Pembuat {BOT_NAME},"
+            text="👨‍💻 Untuk yang ingin berdonasi sebagai ucapan terimakasih kepada Pembuat Saya."
             "\n\n Bisa melalui Qris atau Contact",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
