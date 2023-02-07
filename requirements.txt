@@ -54,3 +54,5 @@ nudepy
 nekos.py
 googletrans
 google-trans-new
+pykeyboard
+pynewtonmath
