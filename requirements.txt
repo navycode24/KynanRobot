@@ -47,3 +47,4 @@ webcolors
 python-arq
 spamwatch
 gtts
+better_profanity
