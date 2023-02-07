@@ -1,10 +1,11 @@
+
 import sys
 import traceback
 from functools import wraps
 
 from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
 
-from KynanRobot import OWNER_ID, pbot
+from KynanRobot import LOGGER, pbot as app
 
 
 def split_limits(text):
@@ -32,11 +33,12 @@ def capture_err(func):
         try:
             return await func(client, message, *args, **kwargs)
         except ChatWriteForbidden:
+            await app.leave_chat(message.chat.id)
             return
         except Exception as err:
             exc_type, exc_obj, exc_tb = sys.exc_info()
             errors = traceback.format_exception(
-                exc_type,
+                etype=exc_type,
                 value=exc_obj,
                 tb=exc_tb,
             )
@@ -49,7 +51,7 @@ def capture_err(func):
                 ),
             )
             for x in error_feedback:
-                await pbot.send_message(OWNER_ID, x)
+                await app.send_message(LOGGER, x)
             raise err
 
     return capture
