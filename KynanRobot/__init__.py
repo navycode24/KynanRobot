@@ -48,6 +48,9 @@ if ENV:
     ALLOW_EXCL = os.environ.get("ALLOW_EXCL", False)
     CASH_API_KEY = os.environ.get("CASH_API_KEY", None)
     DB_URI = os.environ.get("DATABASE_URL")
+    ARQ_API = os.environ.get("ARQ_API", None)
+    ARQ_API_URL = os.environ.get("ARQ_API_URL", "https://thearq.tech/")
+    ARQ_API_KEY = os.environ.get("ARQ_API_KEY", "BCYKVF-KYQWFM-JCMORU-RZWOFQ-ARQ")
     DEL_CMDS = bool(os.environ.get("DEL_CMDS", False))
     EVENT_LOGS = os.environ.get("EVENT_LOGS", None)
     INFOPIC = bool(os.environ.get("INFOPIC", "True"))
@@ -105,6 +108,8 @@ else:
     CASH_API_KEY = Config.CASH_API_KEY
     DB_URI = Config.DATABASE_URL
     DEL_CMDS = Config.DEL_CMDS
+    ARQ_API = Config.ARQ_API_KEY
+    ARQ_API_URL = Config.ARQ_API_URL
     EVENT_LOGS = Config.EVENT_LOGS
     INFOPIC = Config.INFOPIC
     LOAD = Config.LOAD
