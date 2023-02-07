@@ -436,7 +436,7 @@ def kynan_about_callback(update, context):
         )
     elif query.data == "kynan_support":
         query.message.edit_text(
-            text="*📝 Bantuan Perintah Hʏᴘᴇʀ*"
+            text="*📝 Bantuan Perintah {BOT_NAME}*"
             "\npilih tombol dibawah untuk melihat bantuan perintah.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
@@ -487,7 +487,7 @@ def kynan_about_callback(update, context):
         )
     elif query.data == "kynan_own":
         query.message.edit_text(
-            text="👨‍💻 Untuk yang ingin berdonasi sebagai ucapan terimakasih kepada Pembuat Kynan,"
+            text="👨‍💻 Untuk yang ingin berdonasi sebagai ucapan terimakasih kepada Pembuat {BOT_NAME},"
             "\n\n Bisa melalui Qris atau Contact",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
