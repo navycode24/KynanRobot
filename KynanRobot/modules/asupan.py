@@ -2,7 +2,7 @@ import os
 import random
 from telethon.tl.types import InputMessagesFilterPhotos, InputMessagesFilterVideo, InputMessagesFilterVoice
 from KynanRobot.events import register
-from KynanRobot import telethn                 
+from KynanRobot import telethn as tbot, ubot2              
 
 
 @register(pattern="^/asupan ?(.*)")
@@ -11,13 +11,13 @@ async def _(event):
     try:
         asupannya = [
             asupan
-            async for asupan in telethn.iter_messages(
+            async for asupan in ubot2.iter_messages(
             "punyakenkan", filter=InputMessagesFilterVideo
             )
         ]
         kontols = random.choice(asupannya)
-        pantek = await telethn.download_media(kontols)
-        await telethn.send_file(
+        pantek = await ubot2.download_media(kontols)
+        await tbot.send_file(
             event.chat.id, 
             caption="**Nih Asupan nya Kak**", 
             file=pantek
@@ -33,13 +33,13 @@ async def _(event):
     try:
         asupannya = [
             asupan
-            async for asupan in telethn.iter_messages(
+            async for asupan in ubot2.iter_messages(
             "animehikarixa", filter=InputMessagesFilterPhotos
             )
         ]
         kontols = random.choice(asupannya)
-        pantek = await telethn.download_media(kontols)
-        await telethn.send_file(
+        pantek = await ubot2.download_media(kontols)
+        await tbot.send_file(
             event.chat.id, 
             caption="**Nih pp animenya**", 
             file=pantek
@@ -55,13 +55,13 @@ async def _(event):
     try:
         asupannya = [
             asupan
-            async for asupan in telethn.iter_messages(
+            async for asupan in ubot2.iter_messages(
             "Anime_WallpapersHD", filter=InputMessagesFilterPhotos
             )
         ]
         kontols = random.choice(asupannya)
-        pantek = await telethn.download_media(kontols)
-        await telethn.send_file(
+        pantek = await ubot2.download_media(kontols)
+        await tbot.send_file(
             event.chat.id, 
             caption="**Nih Wallpaper Animenya**", 
             file=pantek
@@ -77,13 +77,13 @@ async def _(event):
     try:
         asupannya = [
             asupan
-            async for asupan in telethn.iter_messages(
+            async for asupan in ubot2.iter_messages(
             "CeweLogoPack", filter=InputMessagesFilterPhotos
             )
         ]
         kontols = random.choice(asupannya)
-        pantek = await telethn.download_media(kontols)
-        await telethn.send_file(
+        pantek = await ubot2.download_media(kontols)
+        await tbot.send_file(
             event.chat.id, 
             caption="**Nih kak ayang nya....**", 
             file=pantek
@@ -99,13 +99,13 @@ async def _(event):
     try:
         asupannya = [
             asupan
-            async for asupan in telethn.iter_messages(
+            async for asupan in ubot2.iter_messages(
             "mentahanppcp", filter=InputMessagesFilterPhotos
             )
         ]
         kontols = random.choice(asupannya)
-        pantek = await telethn.download_media(kontols)
-        await telethn.send_file(
+        pantek = await ubot2.download_media(kontols)
+        await tbot.send_file(
             event.chat.id, 
             caption="**Nih PP Couple Nya..**", 
             file=pantek
@@ -120,13 +120,13 @@ async def _(event):
     try:
         asupannya = [
             asupan
-            async for asupan in telethn.iter_messages(
+            async for asupan in ubot2.iter_messages(
             "bahaninimah", filter=InputMessagesFilterVideo
             )
         ]
         kontols = random.choice(asupannya)
-        pantek = await telethn.download_media(kontols)
-        await telethn.send_file(
+        pantek = await ubot2.download_media(kontols)
+        await tbot.send_file(
             event.chat.id, 
             caption="`Astaghfirullah..`", 
             file=pantek
@@ -141,13 +141,13 @@ async def _(event):
     try:
         asupannya = [
             asupan
-            async for asupan in telethn.iter_messages(
+            async for asupan in ubot2.iter_messages(
             "durovbgst", filter=InputMessagesFilterPhotos
             )
         ]
         kontols = random.choice(asupannya)
-        pantek = await telethn.download_media(kontols)
-        await telethn.send_file(
+        pantek = await ubot2.download_media(kontols)
+        await tbot.send_file(
             event.chat.id, 
             caption="`Insyaf lah wahai anak mude`", 
             file=pantek
