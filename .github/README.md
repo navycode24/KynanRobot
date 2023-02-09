@@ -99,7 +99,7 @@ Press `Ctrl+b` and then `d`
 - <b>[ᴀɴɪᴍᴇ ᴋᴀɪᴢᴏᴋᴜ](https://github.com/AnimeKaizoku)  ➻  [sᴀɪᴛᴀᴍᴀ ʀᴏʙᴏᴛ](https://github.com/AnimeKaizoku/SaitamaRobot) </b>
 - <b>[ʜᴀᴍᴋᴇʀ ᴄᴀᴛ](https://github.com/TheHamkerCat)  ➻  [ᴡɪʟʟɪᴀᴍ ʙᴜᴛᴄʜᴇʀ](https://github.com/TheHamkerCat/WilliamButcherBot) </b>
 - <b>[ʀᴇxʌ](https://github.com/Rexashh)  ➻  [ʜɪᴋᴀʀɪ ʀᴏʙᴏᴛ](https://github.com/Rexashh/HikariRobot) </b>
-- <b>[࿈] 𝙏𝙊𝙉𝙄-𝙀𝙓 𐦝 [🇮🇩](https://github.com/Toni880)  ➻  [ʜɪᴋᴀʀɪ ʀᴏʙᴏᴛ](https://github.com/Toni880/PrimeMega) </b>
+- <b>[[࿈] 𝙏𝙊𝙉𝙄-𝙀𝙓 𐦝 [🇮🇩]](https://github.com/Toni880)  ➻  [ᴘʀɪᴍᴇ ᴍᴇɢᴀ](https://github.com/Toni880/PrimeMega) </b>
 
  
 <b>ᴀɴᴅ ᴀʟʟ [ᴛʜᴇ ᴄᴏɴᴛʀɪʙᴜᴛᴏʀs](https://github.com/Onlymeriz/KynanRobot/graphs/contributors) ᴡʜᴏ ʜᴇʟᴩᴇᴅ ɪɴ ᴍᴀᴋɪɴɢ ˹ҡʏɴλɴ ꭙ ꝛᴏʙᴏᴛ˼༗ ᴜsᴇғᴜʟ & ᴩᴏᴡᴇʀғᴜʟ 🖤 </b>
