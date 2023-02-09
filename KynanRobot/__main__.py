@@ -87,9 +87,9 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="t.me/{OWNER_USERNAME}"
+        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="https://t.me/{OWNER_USERNAME}"
         ),
-        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="t.me/{SUPPORT_CHAT}"
+        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="https://t.me/{SUPPORT_CHAT}"
         ),
     ],
     [
@@ -101,7 +101,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="ᴛᴀᴍʙᴀʜᴋᴀɴ ᴀᴋᴜ ᴅɪʜᴀᴛɪᴍᴜ ❤️", url="t.me/{BOT_USERNAME}?startgroup=true"
+            text="ᴛᴀᴍʙᴀʜᴋᴀɴ ᴀᴋᴜ ᴅɪʜᴀᴛɪᴍᴜ ❤️", url="https://t.me/{BOT_USERNAME}?startgroup=true"
         ),
      ],
 ]
@@ -492,7 +492,7 @@ def kynan_about_callback(update, context):
                 [
                  [
                     InlineKeyboardButton(text="ϙʀɪs", url="{DONATE_LINK}"),
-                    InlineKeyboardButton(text="ᴅᴏɴᴀsɪ ❤️", url="t.me/{OWNER_USERNAME}"),
+                    InlineKeyboardButton(text="ᴅᴏɴᴀsɪ ❤️", url="https://t.me/{OWNER_USERNAME}"),
                  ],
                  [
                     InlineKeyboardButton(text="⩹", callback_data="kynan_back"),
