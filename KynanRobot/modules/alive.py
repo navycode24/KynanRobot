@@ -4,21 +4,25 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from telegram import __version__ as telever
 from telethon import __version__ as tlhver
 
-from KynanRobot import BOT_NAME, BOT_USERNAME, OWNER_ID, START_IMG, SUPPORT_CHAT, pbot
+from KynanRobot import BOT_NAME, BOT_USERNAME, OWNER_ID, START_IMG, SUPPORT_CHAT, pbot, OWNER_USERNAME
 
 
 @pbot.on_message(filters.command("alive"))
 async def awake(_, message: Message):
-    TEXT = f"**ʜɪ {message.from_user.mention}, ᴀᴋᴜ {BOT_NAME}.** \n\n"
-    TEXT += f"๏ **ᴍʏ ᴏᴡɴᴇʀ : [↻˹ҡʏɴλɴ˼༗](https://t.me/Riizzvbss)** \n\n"
-    TEXT += f"๏ **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{telever}` \n\n"
-    TEXT += f"๏ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{tlhver}` \n\n"
-    TEXT += f"๏ **ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{pyrover}` \n\n"
+    TEXT = f"┏━━━━━━━━━━━━━━━━━━━━┓\n"
+    TEXT += f"┠➣ **ᴀᴋᴜ {BOT_NAME}.** \n"
+    TEXT += f"┠➣ **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{telever}` \n"
+    TEXT += f"┠➣ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{tlhver}` \n"
+    TEXT += f"┠➣ **ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{pyrover}` \n"
+    TEXT += "┗━━━━━━━━━━━━━━━━━━━━┛\n\n"
     TEXT += "**ᴛᴇʀɪᴍᴀᴋᴀsɪʜ sᴜᴅᴀʜ ᴍᴇɴᴀᴍʙᴀʜᴋᴀɴ ᴋᴜ ᴅɪsɪɴɪ ❤️**"
     BUTTON = [
         [
             InlineKeyboardButton("ʜᴇʟᴘ", url=f"https://t.me/{BOT_USERNAME}?start=help"),
             InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
+        ],
+        [
+            InlineKeyboardButton("ᴍʏ ᴏᴡɴᴇʀ", url=f"t.me/{OWNER_USERNAME}"),
         ]
     ]
     await message.reply_photo(
