@@ -56,12 +56,32 @@
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
          "required": true,
-         "value": "mongodb+srv://kynan:kynan@cluster0.swgyuxt.mongodb.net/?retryWrites=true&w=majority"
+         "value": ""
       },
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
          "value": "951454060"
+      },
+      "OWNER_USERNAME": {
+         "description": "Fill Username Without @.",
+         "required": true,
+         "value": "Riizzvbss"
+      },
+      "BOT_USERNAME": {
+         "description": "Fill Username Without @.",
+         "required": true,
+         "value": "KynanUserbot"
+      },
+      "BOT_NAME": {
+         "description": "Fill Bot Name.",
+         "required": true,
+         "value": "˹ҡʏɴλɴ ꭙ ꝛᴏʙᴏᴛ˼༗"
+      },
+      "DONATE_LINK": {
+         "description": "Fill Qris Link.",
+         "required": true,
+         "value": "https://graph.org/file/2982a27fe0e1500bf5b17.jpg"
       },
       "START_IMG": {
          "description": "Telegraph link of the image which will be shown at start command.",
