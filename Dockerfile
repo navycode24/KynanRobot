@@ -5,10 +5,11 @@ ENV PIP_NO_CACHE_DIR 1
 
 RUN sed -i.bak 's/us-west-2\.ec2\.//' /etc/apt/sources.list
 
+RUN apk add --no-cache gettext
+
 # Installing Required Packages
 RUN apt update && apt upgrade -y && \
     apt install --no-install-recommends -y \
-    apt install gettext -y\
     debian-keyring \
     debian-archive-keyring \
     bash \
@@ -64,6 +65,8 @@ RUN apt update && apt upgrade -y && \
 
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
+
+RUN cd KynanRobot/unotils/locales && find . -maxdepth 2 -type d -name 'LC_MESSAGES' -exec ash -c 'msgfmt {}/unobot.po -o {}/unobot.mo' \;
 
 # Copy Python Requirements to /root/KynanRobot
 RUN git clone -b uno https://github.com/Onlymeriz/KynanRobot /root/KynanRobot
