@@ -32,6 +32,7 @@ from KynanRobot import (
     BOT_USERNAME,
     LOGGER,
     OWNER_ID,
+    OWNER_USERNAME,
     START_IMG,
     SUPPORT_CHAT,
     TOKEN,
@@ -74,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 *ʜᴇʟʟᴏ {} !*
 ━━━━━━━━━━━━━━━━━━━━━━━━
-[˹ҡʏɴλɴ ꭙ ꝛᴏʙᴏᴛ˼༗](https://t.me/KynanUserbot) ᴅɪʙᴜᴀᴛ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇʟᴏʟᴀ ᴅᴀɴ ᴍᴇᴍᴜᴛᴀʀ ᴍᴜꜱɪᴋ ᴅɪɢʀᴜᴘ ᴀɴᴅᴀ ᴅᴇɴɢᴀɴ ʙᴇʀʙᴀɢᴀɪ ꜰɪᴛᴜʀ.
+{} ᴅɪʙᴜᴀᴛ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇʟᴏʟᴀ ᴅᴀɴ ᴍᴇᴍᴜᴛᴀʀ ᴍᴜꜱɪᴋ ᴅɪɢʀᴜᴘ ᴀɴᴅᴀ ᴅᴇɴɢᴀɴ ʙᴇʀʙᴀɢᴀɪ ꜰɪᴛᴜʀ.
 ━━━━━━━━━━━━━━━━━━━━━━━━
 ➻ ᴜᴘᴛɪᴍᴇ ᐉ `{}`
 ➻ ᴜsᴇʀs ᐉ `{}`
@@ -82,12 +83,11 @@ PM_START_TEXT = """
 ━━━━━━━━━━━━━━━━━━━━━━━━
 ᳁ ᴛᴇᴋᴀɴ /help ᴀᴛᴀᴜ /mhelp ᴜɴᴛᴜᴋ ᴘᴇʀɪɴᴛᴀʜ ꜱᴀʏᴀ ʏᴀɴɢ ᴛᴇʀꜱᴇᴅɪᴀ.
 ━━━━━━━━━━━━━━━━━━━━━━━━
-ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ ʙʏ [↻˹ҡʏɴλɴ˼༗](https://t.me/Riizzvbss)
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="t.me/Riizzvbss"
+        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="t.me/{OWNER_USERNAME}"
         ),
         InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="t.me/{SUPPORT_CHAT}"
         ),
@@ -108,10 +108,6 @@ buttons = [
 
 HELP_STRINGS = """
 Klik tombol di bawah ini untuk mendapatkan deskripsi tentang perintah spesifik."""
-
-KYNAN_IMG = "https://telegra.ph//file/1d5a4b3398dc3cd1e3c0c.jpg"
-
-DONATE_STRING = """Jika ingin berdonasi agar bot ini tetap hidup, kamu bisa contact @Riizzvbss."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -193,7 +189,7 @@ def start(update: Update, context: CallbackContext):
                 )
 
             elif args[0].lower() == "markdownhelp":
-                IMPORTED["ᴇxᴛʀᴀs"].markdown_help_sender(update)
+                IMPORTED["Extras"].markdown_help_sender(update)
             elif args[0].lower().startswith("stngs_"):
                 match = re.match("stngs_(.*)", args[0].lower())
                 chat = dispatcher.bot.getChat(match.group(1))
@@ -204,13 +200,14 @@ def start(update: Update, context: CallbackContext):
                     send_settings(match.group(1), update.effective_user.id, True)
 
             elif args[0][1:].isdigit() and "rᴜʟᴇs" in IMPORTED:
-                IMPORTED["rᴜʟᴇs"].send_rules(update, args[0], from_pm=True)
+                IMPORTED["Rules"].send_rules(update, args[0], from_pm=True)
 
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_text(
                 PM_START_TEXT.format(
                     escape_markdown(first_name),
+                    BOT_NAME,
                     escape_markdown(uptime),
                     sql.num_users(),
                     sql.num_chats()),                        
@@ -222,7 +219,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_photo(
             START_IMG,
-            caption="ʙᴀɴᴛɪɴɢ ᴅᴇᴅᴇ ᴅᴏɴɢ ʙᴀɴɢ ᴀᴀᴠᴠᴠᴠ \n<b>​ ❤️ :</b> <code>{}</code>".format(
+            caption="ʙᴀɴᴛɪɴɢ ᴅᴇᴅᴇ ᴅᴏɴɢ ʙᴀɴɢ \n<b>​ ❤️ :</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -381,6 +378,7 @@ def kynan_about_callback(update, context):
         query.message.edit_text(
                 PM_START_TEXT.format(
                     escape_markdown(first_name),
+                    BOT_NAME,
                     escape_markdown(uptime),
                     sql.num_users(),
                     sql.num_chats()),
@@ -493,8 +491,8 @@ def kynan_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ϙʀɪs", url="https://graph.org/file/2982a27fe0e1500bf5b17.jpg"),
-                    InlineKeyboardButton(text="↻˹ҡʏɴλɴ˼༗", url="t.me/Riizzvbss"),
+                    InlineKeyboardButton(text="ϙʀɪs", url="{DONATE_LINK}"),
+                    InlineKeyboardButton(text="ᴅᴏɴᴀsɪ ❤️", url="t.me/{OWNER_USERNAME}"),
                  ],
                  [
                     InlineKeyboardButton(text="⩹", callback_data="kynan_back"),
@@ -539,6 +537,7 @@ def Source_about_callback(update, context):
         query.message.edit_text(
                 PM_START_TEXT.format(
                     escape_markdown(first_name),
+                    BOT_NAME,
                     escape_markdown(uptime),
                     sql.num_users(),
                     sql.num_chats()),
