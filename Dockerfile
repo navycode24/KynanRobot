@@ -65,7 +65,7 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/KynanRobot
-RUN git clone https://github.com/Onlymeriz/KynanRobot /root/KynanRobot
+RUN git clone -b master https://github.com/Onlymeriz/KynanRobot /root/KynanRobot
 WORKDIR /root/KynanRobot
 
 #Copy config file to /root/KynanRobot/KynanRobot
