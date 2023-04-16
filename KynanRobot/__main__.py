@@ -73,7 +73,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*ʜᴇʟʟᴏ {} !*
+*ʜᴇʟʟᴏ  !
 ━━━━━━━━━━━━━━━━━━━━━━━━
 {} ᴅɪʙᴜᴀᴛ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇʟᴏʟᴀ ᴅᴀɴ ᴍᴇᴍᴜᴛᴀʀ ᴍᴜꜱɪᴋ ᴅɪɢʀᴜᴘ ᴀɴᴅᴀ ᴅᴇɴɢᴀɴ ʙᴇʀʙᴀɢᴀɪ ꜰɪᴛᴜʀ.
 ━━━━━━━━━━━━━━━━━━━━━━━━
@@ -96,12 +96,12 @@ buttons = [
         InlineKeyboardButton(text="ʙᴀɴᴛᴜᴀɴ", callback_data="kynan_support"
        ),
         InlineKeyboardButton(
-            text="ᴅᴏɴᴀsɪ ❤️", callback_data="kynan_own"
+            text="azazel", callback_data="azazel_own"
        ),
     ],
     [
         InlineKeyboardButton(
-            text="ᴛᴀᴍʙᴀʜᴋᴀɴ ᴀᴋᴜ ᴅɪʜᴀᴛɪᴍᴜ ❤️", url="https://t.me/{BOT_USERNAME}?startgroup=true"
+            text="ᴀᴢᴀᴢᴇʟ  ᴛᴇʟᴀʜ  ᴅɪ  ɴʏᴀʟᴀᴋᴀɴ!", url="https://t.me/{BOT_USERNAME}?startgroup=true"
         ),
      ],
 ]
@@ -120,7 +120,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("KynanRobot.modules." + module_name)
+    imported_module = importlib.import_module("azazelRobot.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -350,7 +350,7 @@ def help_button(update, context):
 @run_async
 def kynan_about_callback(update, context):
     query = update.callback_query
-    if query.data == "kynan_":
+    if query.data == "azazel_":
         query.message.edit_text(
             text="♬ ʙᴀɴᴛᴜᴀɴ ᴘᴇʀɪɴᴛᴀʜ ᴍᴜꜱɪᴄ."
             "\nᴘɪʟɪʜ ᴍᴇɴᴜ ᴅɪ ʙᴀᴡᴀʜ ɪɴɪ ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ʙᴀɴᴛᴜᴀɴ ᴍᴜꜱɪᴄ. ",
@@ -359,20 +359,20 @@ def kynan_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ ᴀᴅᴍɪɴ", callback_data="kynan_admin"),
-                    InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ ʙᴏᴛ", callback_data="kynan_notes"),
+                    InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ ᴀᴅᴍɪɴ", callback_data="azazel_admin"),
+                    InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ ʙᴏᴛ", callback_data="azazel_notes"),
                  ],
                  [
                     InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ ᴘʟᴀʏ", callback_data="source_"),
-                    InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ ᴇxsᴛʀᴀ", callback_data="kynan_credit"),
+                    InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ ᴇxsᴛʀᴀ", callback_data="azazel_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="⩹", callback_data="kynan_support"),
+                    InlineKeyboardButton(text="⩹", callback_data="azazel1_support"),
                  ]
                 ]
             ),
         )
-    elif query.data == "kynan_back":
+    elif query.data == "azazel_back":
         first_name = update.effective_user.first_name
         uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
@@ -388,7 +388,7 @@ def kynan_about_callback(update, context):
                 disable_web_page_preview=False,
         )
 
-    elif query.data == "kynan_admin":
+    elif query.data == "azazel_admin":
         query.message.edit_text(
             text=f"*✮ PERINTAH ADMIN."
             "\n\nc singkatan dari pemutaran Channel."
@@ -414,10 +414,10 @@ def kynan_about_callback(update, context):
             "\n ➣ /authusers - Periksa DAFTAR AUTH grup",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="⩹", callback_data="kynan_")]]
+                [[InlineKeyboardButton(text="⩹", callback_data="azazel_")]]
             ),
         )
-    elif query.data == "kynan_notes":
+    elif query.data == "azazel_notes":
         query.message.edit_text(
             text="✮ PERINTAH BOT"
             "\n\n ➣ /mstats - Dapatkan 10 Trek Global Stats Teratas, 10 Pengguna Bot Teratas, 10 Obrolan Teratas di bot, 10 Teratas Dimainkan dalam obrolan, dll."
@@ -429,10 +429,10 @@ def kynan_about_callback(update, context):
             "\n\n ➣ /queue or /cqueue- Periksa Daftar Antrian Musik",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="⩹", callback_data="kynan_")]]
+                [[InlineKeyboardButton(text="⩹", callback_data="azazel_")]]
             ),
         )
-    elif query.data == "kynan_support":
+    elif query.data == "azazel_support":
         query.message.edit_text(
             text="*📝 Bantuan Perintah Saya*"
             "\npilih tombol dibawah untuk melihat bantuan perintah.",
@@ -440,11 +440,11 @@ def kynan_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ᴍᴜsɪᴄ ♬", callback_data="kynan_"),
+                    InlineKeyboardButton(text="ᴍᴜsɪᴄ ♬", callback_data="azazel_"),
                     InlineKeyboardButton(text="✮ ᴍᴀɴᴀɢᴇ", callback_data="help_back"),
                  ],
                  [
-                    InlineKeyboardButton(text="⩹", callback_data="kynan_back"),
+                    InlineKeyboardButton(text="⩹", callback_data="azazel_back"),
                  
                  ]
                 ]
@@ -452,7 +452,7 @@ def kynan_about_callback(update, context):
         )
 
 
-    elif query.data == "kynan_credit":
+    elif query.data == "azazel_credit":
         query.message.edit_text(
             text="♬ PERINTAH EKSTRA"
             "\n\n༊ Perintah Ekstra."
@@ -478,12 +478,12 @@ def kynan_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="⩹", callback_data="kynan_")
+                    InlineKeyboardButton(text="⩹", callback_data="azazel_")
                  ]
                 ]
             ),
         )
-    elif query.data == "kynan_own":
+    elif query.data == "azazel_own":
         query.message.edit_text(
             text="👨‍💻 Untuk yang ingin berdonasi sebagai ucapan terimakasih kepada Pembuat Saya."
             "\n\n Bisa melalui Qris atau Contact",
@@ -492,10 +492,10 @@ def kynan_about_callback(update, context):
                 [
                  [
                     InlineKeyboardButton(text="ϙʀɪs", url="{DONATE_LINK}"),
-                    InlineKeyboardButton(text="ᴅᴏɴᴀsɪ ❤️", url="https://t.me/{OWNER_USERNAME}"),
+                    InlineKeyboardButton(text="️azazel", url="https://t.me/{OWNER_USERNAME}"),
                  ],
                  [
-                    InlineKeyboardButton(text="⩹", callback_data="kynan_back"),
+                    InlineKeyboardButton(text="⩹", callback_data="azazel_back"),
                  ]
                 ]
             ),
@@ -799,7 +799,7 @@ def main():
                 chat_id=f"@{SUPPORT_CHAT}",
                 photo=START_IMG,
                 caption=f"""
-** ༊ {BOT_NAME} ᴀᴋᴜ ʜɪᴅᴜᴘ ❤️**
+** ༊ {BOT_NAME} ᴀᴋᴜ ʜɪᴅᴜᴘ ❤**
 
 ┏━━━━━━━━━━━━━━━━━━━┓
 ┠➣ **ᴘʏᴛʜᴏɴ :** `{y()}`
@@ -825,7 +825,7 @@ def main():
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
     about_callback_handler = CallbackQueryHandler(
-        kynan_about_callback, pattern=r"kynan_"
+        kynan_about_callback, pattern=r"azazel_"
     )
     source_callback_handler = CallbackQueryHandler(
         Source_about_callback, pattern=r"source_"
